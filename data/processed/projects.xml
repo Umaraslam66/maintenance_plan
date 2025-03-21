@@ -1,0 +1,98 @@
+<?xml version="1.0" ?>
+<problem>
+  <resources>
+    <resource id="crew1" name="Maintenance crew 1"/>
+    <resource id="crew2" name="Maintenance crew 2"/>
+    <resource id="equip1" name="Special equipment 1"/>
+  </resources>
+  <projects>
+    <project id="214" desc="Switch change Alingsas" earliestStart="2025-03-08 00:00:00" latestEnd="2025-07-04 23:59:59">
+      <task id="214_1" desc="Preparatory work" durationHr="8">
+        <traffic_blocking link="G_A" amount="50"/>
+        <requiredResources>
+          <resource id="crew1" amount="1"/>
+        </requiredResources>
+      </task>
+      <task id="214_2" desc="Main closure" durationHr="48">
+        <traffic_blocking link="G_A" amount="100"/>
+        <requiredResources>
+          <resource id="crew1" amount="1"/>
+          <resource id="equip1" amount="1"/>
+        </requiredResources>
+      </task>
+      <task id="214_3" desc="Follow-up work" durationHr="8">
+        <traffic_blocking link="G_A" amount="50"/>
+        <requiredResources>
+          <resource id="crew1" amount="1"/>
+        </requiredResources>
+      </task>
+    </project>
+    <project id="526" desc="Hassleholm railway yard catenary refurbishment" earliestStart="2025-03-08 00:00:00" latestEnd="2025-05-23 23:59:59">
+      <task id="526_1" desc="Main closure" durationHr="72">
+        <traffic_blocking link="HM_HOR" amount="100"/>
+        <requiredResources>
+          <resource id="crew1" amount="1"/>
+          <resource id="equip1" amount="1"/>
+        </requiredResources>
+      </task>
+    </project>
+    <project id="450" desc="Hassleholm railway yard platform renewal" earliestStart="2025-03-08 00:00:00" latestEnd="2025-12-12 23:59:59">
+      <task id="450_1" desc="Service window" durationHr="6" count="6">
+        <traffic_blocking link="HM_HOR" amount="esp"/>
+        <requiredResources>
+          <resource id="crew1" amount="1"/>
+        </requiredResources>
+      </task>
+    </project>
+    <project id="877" desc="Varberg-Hamra double track tunnel" earliestStart="2025-03-08 00:00:00" latestEnd="2025-11-07 23:59:59">
+      <task id="877_1" desc="Main closure" durationHr="96">
+        <traffic_blocking link="KB_VB" amount="100"/>
+        <requiredResources>
+          <resource id="crew1" amount="1"/>
+          <resource id="equip1" amount="1"/>
+        </requiredResources>
+      </task>
+    </project>
+    <project id="880" desc="Varberg-Hamra double track tunnel" earliestStart="2025-03-08 00:00:00" latestEnd="2025-12-12 23:59:59">
+      <task id="880_1" desc="Service window" durationHr="8">
+        <traffic_blocking link="VGE_TOR" amount="50"/>
+        <requiredResources>
+          <resource id="crew1" amount="1"/>
+        </requiredResources>
+      </task>
+    </project>
+    <project id="N001" desc="Catenary replacement Bracke-Langsele" earliestStart="2025-03-08 00:00:00" latestEnd="2025-09-05 23:59:59">
+      <task id="N001_1" desc="Traffic disruption 10-week total closure" durationHr="1680">
+        <traffic_blocking link="BRC_LAS" amount="100"/>
+        <requiredResources>
+          <resource id="crew1" amount="1"/>
+          <resource id="equip1" amount="1"/>
+        </requiredResources>
+      </task>
+    </project>
+    <project id="N002" desc="Catenary replacement Bracke-Langsele" earliestStart="2025-03-08 00:00:00" latestEnd="2025-09-05 23:59:59">
+      <task id="N002_1" desc="Service window daily 8-hour shifts" durationHr="8" count="70">
+        <traffic_blocking link="BRC_LAS" amount="100"/>
+        <requiredResources>
+          <resource id="crew1" amount="1"/>
+        </requiredResources>
+      </task>
+    </project>
+    <project id="N003" desc="Track work Hudiksvall-Sundsvall" earliestStart="2025-03-08 00:00:00" latestEnd="2025-09-05 23:59:59">
+      <task id="N003_1" desc="Service window daily 6-hour shifts on weekdays" durationHr="6" count="50">
+        <traffic_blocking link="HDV_SUC" amount="100"/>
+        <requiredResources>
+          <resource id="crew1" amount="1"/>
+        </requiredResources>
+      </task>
+    </project>
+    <project id="N004" desc="Track work Boden-Gallivare" earliestStart="2025-03-08 00:00:00" latestEnd="2025-09-05 23:59:59">
+      <task id="N004_1" desc="Service window daily 8-hour shifts" durationHr="8" count="60">
+        <traffic_blocking link="BDN_GVE" amount="100"/>
+        <requiredResources>
+          <resource id="crew1" amount="1"/>
+        </requiredResources>
+      </task>
+    </project>
+  </projects>
+</problem>

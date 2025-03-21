@@ -1,0 +1,602 @@
+<?xml version="1.0" ?>
+<problem>
+  <network>
+    <nodes>
+      <node id="G" name="Goteborg Central" lat="57.7089" lon="11.9746" merge_group="G"/>
+      <node id="S" name="Stockholm Central" lat="59.3293" lon="18.0686" merge_group="S"/>
+      <node id="M" name="Malmo Central" lat="55.605" lon="13.0038" merge_group="M"/>
+      <node id="SK" name="Skovde" lat="58.389" lon="13.8456"/>
+      <node id="HB" name="Hallsberg" lat="59.0664" lon="15.1098" merge_group="HB"/>
+      <node id="A" name="Alingsas" lat="57.9295" lon="12.5337"/>
+      <node id="K" name="Katrineholm" lat="59.0" lon="16.2"/>
+      <node id="F" name="Falkoping" lat="58.1752" lon="13.553"/>
+      <node id="LP" name="Linkoping" lat="58.4108" lon="15.6213"/>
+      <node id="N" name="Norrkoping" lat="58.5977" lon="16.1826"/>
+      <node id="MY" name="Mjolby" lat="58.33" lon="15.12"/>
+      <node id="NS" name="Nassjo" lat="57.6526" lon="14.6946"/>
+      <node id="AV" name="Alvesta" lat="56.899" lon="14.556"/>
+      <node id="HM" name="Halmstad" lat="56.6746" lon="12.8645"/>
+      <node id="LU" name="Lund" lat="55.7047" lon="13.191" merge_group="LU"/>
+      <node id="E" name="Eslov" lat="55.8391" lon="13.3035"/>
+      <node id="HOR" name="Hoor" lat="55.9374" lon="13.5426"/>
+      <node id="KB" name="Kungsbacka" lat="57.4874" lon="12.0798"/>
+      <node id="VB" name="Varberg" lat="57.1055" lon="12.2502"/>
+      <node id="HBG" name="Helsingborg" lat="56.0465" lon="12.6945"/>
+      <node id="AGE" name="Angelholm" lat="56.2428" lon="12.8605"/>
+      <node id="HDV" name="Hudiksvall" lat="61.7279" lon="17.1044"/>
+      <node id="SUC" name="Sundsvall Central" lat="62.3908" lon="17.3069"/>
+      <node id="BRC" name="Bracke" lat="62.7508" lon="15.4195"/>
+      <node id="LAS" name="Langsele" lat="63.1745" lon="17.1063"/>
+      <node id="UME" name="Umea Central" lat="63.8284" lon="20.2597"/>
+      <node id="VNS" name="Vannas" lat="63.9062" lon="19.7503"/>
+      <node id="BDN" name="Boden Central" lat="65.8256" lon="21.6906"/>
+      <node id="LE" name="Lulea" lat="65.5842" lon="22.1547"/>
+      <node id="GVE" name="Gallivare" lat="67.1367" lon="20.6599"/>
+      <node id="KRA" name="Kiruna" lat="67.8558" lon="20.2253"/>
+      <node id="KL" name="Karlstad Central" lat="59.3793" lon="13.5036"/>
+      <node id="KIL" name="Kil" lat="59.5038" lon="13.3196"/>
+      <node id="TOR" name="Toreboda" lat="58.7062" lon="14.1229"/>
+      <node id="VGE" name="Veinge" lat="56.4833" lon="13.0333"/>
+      <node id="BS" name="Boras" lat="57.721" lon="12.9401"/>
+      <node id="ALV" name="Alvangen" lat="58.0116" lon="12.1147"/>
+      <node id="DFO" name="Degerfors" lat="59.2335" lon="14.428"/>
+    </nodes>
+    <links>
+      <link id="G_A" from="G" to="A" length="46" tracks="2" capacity="10"/>
+      <link id="A_SK" from="A" to="SK" length="81" tracks="2" capacity="10"/>
+      <link id="SK_HB" from="SK" to="HB" length="73" tracks="2" capacity="10"/>
+      <link id="HB_K" from="HB" to="K" length="90" tracks="2" capacity="10"/>
+      <link id="K_S" from="K" to="S" length="140" tracks="2" capacity="10"/>
+      <link id="HB_NS" from="HB" to="NS" length="172" tracks="1" capacity="5"/>
+      <link id="NS_AV" from="NS" to="AV" length="77" tracks="2" capacity="10"/>
+      <link id="AV_HM" from="AV" to="HM" length="82" tracks="2" capacity="10"/>
+      <link id="HM_HOR" from="HM" to="HOR" length="32" tracks="2" capacity="10"/>
+      <link id="HOR_E" from="HOR" to="E" length="30" tracks="2" capacity="10"/>
+      <link id="E_LU" from="E" to="LU" length="24" tracks="2" capacity="10"/>
+      <link id="LU_M" from="LU" to="M" length="20" tracks="2" capacity="10"/>
+      <link id="G_ALV" from="G" to="ALV" length="30" tracks="2" capacity="10"/>
+      <link id="G_KB" from="G" to="KB" length="28" tracks="2" capacity="10"/>
+      <link id="KB_VB" from="KB" to="VB" length="47" tracks="1" capacity="5"/>
+      <link id="VB_VGE" from="VB" to="VGE" length="70" tracks="2" capacity="10"/>
+      <link id="VGE_HBG" from="VGE" to="HBG" length="40" tracks="2" capacity="10"/>
+      <link id="HBG_AGE" from="HBG" to="AGE" length="35" tracks="2" capacity="10"/>
+      <link id="AGE_HM" from="AGE" to="HM" length="60" tracks="2" capacity="10"/>
+      <link id="K_N" from="K" to="N" length="65" tracks="2" capacity="10"/>
+      <link id="N_LP" from="N" to="LP" length="42" tracks="2" capacity="10"/>
+      <link id="LP_MY" from="LP" to="MY" length="35" tracks="2" capacity="10"/>
+      <link id="MY_NS" from="MY" to="NS" length="65" tracks="2" capacity="10"/>
+      <link id="HDV_SUC" from="HDV" to="SUC" length="86" tracks="1" capacity="5"/>
+      <link id="SUC_BRC" from="SUC" to="BRC" length="100" tracks="1" capacity="5"/>
+      <link id="BRC_LAS" from="BRC" to="LAS" length="120" tracks="1" capacity="5"/>
+      <link id="LAS_VNS" from="LAS" to="VNS" length="153" tracks="1" capacity="5"/>
+      <link id="VNS_UME" from="VNS" to="UME" length="32" tracks="1" capacity="5"/>
+      <link id="UME_BDN" from="UME" to="BDN" length="210" tracks="1" capacity="5"/>
+      <link id="BDN_LE" from="BDN" to="LE" length="38" tracks="1" capacity="5"/>
+      <link id="BDN_GVE" from="BDN" to="GVE" length="180" tracks="1" capacity="5"/>
+      <link id="GVE_KRA" from="GVE" to="KRA" length="120" tracks="1" capacity="5"/>
+      <link id="VGE_TOR" from="VGE" to="TOR" length="60" tracks="1" capacity="5"/>
+      <link id="G_BS" from="G" to="BS" length="64" tracks="1" capacity="5"/>
+      <link id="BS_NS" from="BS" to="NS" length="132" tracks="1" capacity="5"/>
+      <link id="DFO_SK" from="DFO" to="SK" length="85" tracks="1" capacity="5"/>
+      <link id="HB_DFO" from="HB" to="DFO" length="45" tracks="1" capacity="5"/>
+      <link id="A_G" from="A" to="G" length="46" tracks="2" capacity="10"/>
+      <link id="SK_A" from="SK" to="A" length="81" tracks="2" capacity="10"/>
+      <link id="HB_SK" from="HB" to="SK" length="73" tracks="2" capacity="10"/>
+      <link id="K_HB" from="K" to="HB" length="90" tracks="2" capacity="10"/>
+      <link id="S_K" from="S" to="K" length="140" tracks="2" capacity="10"/>
+      <link id="NS_HB" from="NS" to="HB" length="172" tracks="1" capacity="5"/>
+      <link id="AV_NS" from="AV" to="NS" length="77" tracks="2" capacity="10"/>
+      <link id="HM_AV" from="HM" to="AV" length="82" tracks="2" capacity="10"/>
+      <link id="HOR_HM" from="HOR" to="HM" length="32" tracks="2" capacity="10"/>
+      <link id="E_HOR" from="E" to="HOR" length="30" tracks="2" capacity="10"/>
+      <link id="LU_E" from="LU" to="E" length="24" tracks="2" capacity="10"/>
+      <link id="M_LU" from="M" to="LU" length="20" tracks="2" capacity="10"/>
+      <link id="ALV_G" from="ALV" to="G" length="30" tracks="2" capacity="10"/>
+      <link id="KB_G" from="KB" to="G" length="28" tracks="2" capacity="10"/>
+      <link id="VB_KB" from="VB" to="KB" length="47" tracks="1" capacity="5"/>
+      <link id="VGE_VB" from="VGE" to="VB" length="70" tracks="2" capacity="10"/>
+      <link id="HBG_VGE" from="HBG" to="VGE" length="40" tracks="2" capacity="10"/>
+      <link id="AGE_HBG" from="AGE" to="HBG" length="35" tracks="2" capacity="10"/>
+      <link id="HM_AGE" from="HM" to="AGE" length="60" tracks="2" capacity="10"/>
+      <link id="N_K" from="N" to="K" length="65" tracks="2" capacity="10"/>
+      <link id="LP_N" from="LP" to="N" length="42" tracks="2" capacity="10"/>
+      <link id="MY_LP" from="MY" to="LP" length="35" tracks="2" capacity="10"/>
+      <link id="NS_MY" from="NS" to="MY" length="65" tracks="2" capacity="10"/>
+      <link id="SUC_HDV" from="SUC" to="HDV" length="86" tracks="1" capacity="5"/>
+      <link id="BRC_SUC" from="BRC" to="SUC" length="100" tracks="1" capacity="5"/>
+      <link id="LAS_BRC" from="LAS" to="BRC" length="120" tracks="1" capacity="5"/>
+      <link id="VNS_LAS" from="VNS" to="LAS" length="153" tracks="1" capacity="5"/>
+      <link id="UME_VNS" from="UME" to="VNS" length="32" tracks="1" capacity="5"/>
+      <link id="BDN_UME" from="BDN" to="UME" length="210" tracks="1" capacity="5"/>
+      <link id="LE_BDN" from="LE" to="BDN" length="38" tracks="1" capacity="5"/>
+      <link id="GVE_BDN" from="GVE" to="BDN" length="180" tracks="1" capacity="5"/>
+      <link id="KRA_GVE" from="KRA" to="GVE" length="120" tracks="1" capacity="5"/>
+      <link id="TOR_VGE" from="TOR" to="VGE" length="60" tracks="1" capacity="5"/>
+      <link id="BS_G" from="BS" to="G" length="64" tracks="1" capacity="5"/>
+      <link id="NS_BS" from="NS" to="BS" length="132" tracks="1" capacity="5"/>
+      <link id="SK_DFO" from="SK" to="DFO" length="85" tracks="1" capacity="5"/>
+      <link id="DFO_HB" from="DFO" to="HB" length="45" tracks="1" capacity="5"/>
+      <link id="LU_E_HOR_HM" from="LU" to="E" length="10" tracks="2" capacity="10"/>
+      <link id="M_LU_E_HOR_HM_AV_NS_MY_LP_N_K_S" from="M" to="LU" length="10" tracks="2" capacity="10"/>
+      <link id="S_K_N_LP" from="S" to="K" length="10" tracks="2" capacity="10"/>
+      <link id="S_K_N_LP_MY_NS_AV_HM_HOR_E_LU_M" from="S" to="K" length="10" tracks="2" capacity="10"/>
+      <link id="G_KB_VB_VGE_HBG_AGE_HM_HOR_E_LU_M" from="G" to="KB" length="10" tracks="2" capacity="10"/>
+      <link id="KRA_GVE_BDN_LE" from="KRA" to="GVE" length="10" tracks="2" capacity="10"/>
+      <link id="HM_HOR_E_LU" from="HM" to="HOR" length="10" tracks="2" capacity="10"/>
+      <link id="G_A_SK_HB" from="G" to="A" length="10" tracks="2" capacity="10"/>
+      <link id="LE_BDN_GVE_KRA" from="LE" to="BDN" length="10" tracks="2" capacity="10"/>
+      <link id="HB_SK_A_G" from="HB" to="SK" length="10" tracks="2" capacity="10"/>
+      <link id="M_LU_E_HOR_HM_AGE_HBG_VGE_VB_KB_G" from="M" to="LU" length="10" tracks="2" capacity="10"/>
+      <link id="LP_N_K_S" from="LP" to="N" length="10" tracks="2" capacity="10"/>
+      <link id="S_K_HB_SK_A_G" from="S" to="K" length="10" tracks="2" capacity="10"/>
+      <link id="G_A_SK_HB_K_S" from="G" to="A" length="10" tracks="2" capacity="10"/>
+    </links>
+  </network>
+  <traffic>
+    <train_types>
+      <train_type id="RST" name="Passenger Train"/>
+      <train_type id="GT" name="Freight Train"/>
+    </train_types>
+    <lines>
+      <line id="G_S_RST1" origin="G" destination="S" train_type="RST"/>
+      <line id="S_G_RST1" origin="S" destination="G" train_type="RST"/>
+      <line id="G_M_RST1" origin="G" destination="M" train_type="RST"/>
+      <line id="M_G_RST1" origin="M" destination="G" train_type="RST"/>
+      <line id="S_M_RST1" origin="S" destination="M" train_type="RST"/>
+      <line id="M_S_RST1" origin="M" destination="S" train_type="RST"/>
+      <line id="G_HB_RST2" origin="G" destination="HB" train_type="RST"/>
+      <line id="HB_G_RST2" origin="HB" destination="G" train_type="RST"/>
+      <line id="HM_LU_RST2" origin="HM" destination="LU" train_type="RST"/>
+      <line id="LU_HM_RST2" origin="LU" destination="HM" train_type="RST"/>
+      <line id="S_LP_RST2" origin="S" destination="LP" train_type="RST"/>
+      <line id="LP_S_RST2" origin="LP" destination="S" train_type="RST"/>
+      <line id="G_HB_GT1" origin="G" destination="HB" train_type="GT"/>
+      <line id="HB_G_GT1" origin="HB" destination="G" train_type="GT"/>
+      <line id="G_M_GT1" origin="G" destination="M" train_type="GT"/>
+      <line id="M_G_GT1" origin="M" destination="G" train_type="GT"/>
+      <line id="LE_KRA_RST1" origin="LE" destination="KRA" train_type="RST"/>
+      <line id="KRA_LE_RST1" origin="KRA" destination="LE" train_type="RST"/>
+      <line id="KRA_LE_GT2" origin="KRA" destination="LE" train_type="GT"/>
+      <line id="LE_KRA_GT2" origin="LE" destination="KRA" train_type="GT"/>
+    </lines>
+    <line_demand>
+      <demand line="G_S_RST1" startHr="5" endHr="6" demand="7"/>
+      <demand line="G_S_RST1" startHr="9" endHr="10" demand="7"/>
+      <demand line="G_S_RST1" startHr="13" endHr="14" demand="7"/>
+      <demand line="G_S_RST1" startHr="15" endHr="16" demand="7"/>
+      <demand line="G_S_RST1" startHr="17" endHr="18" demand="7"/>
+      <demand line="G_S_RST1" startHr="21" endHr="22" demand="7"/>
+      <demand line="S_G_RST1" startHr="5" endHr="6" demand="7"/>
+      <demand line="S_G_RST1" startHr="9" endHr="10" demand="7"/>
+      <demand line="S_G_RST1" startHr="13" endHr="14" demand="7"/>
+      <demand line="S_G_RST1" startHr="15" endHr="16" demand="7"/>
+      <demand line="S_G_RST1" startHr="17" endHr="18" demand="7"/>
+      <demand line="S_G_RST1" startHr="21" endHr="22" demand="7"/>
+      <demand line="G_M_RST1" startHr="5" endHr="6" demand="7"/>
+      <demand line="G_M_RST1" startHr="9" endHr="10" demand="7"/>
+      <demand line="G_M_RST1" startHr="13" endHr="14" demand="7"/>
+      <demand line="G_M_RST1" startHr="15" endHr="16" demand="7"/>
+      <demand line="G_M_RST1" startHr="17" endHr="18" demand="7"/>
+      <demand line="G_M_RST1" startHr="21" endHr="22" demand="7"/>
+      <demand line="M_G_RST1" startHr="5" endHr="6" demand="7"/>
+      <demand line="M_G_RST1" startHr="9" endHr="10" demand="7"/>
+      <demand line="M_G_RST1" startHr="13" endHr="14" demand="7"/>
+      <demand line="M_G_RST1" startHr="15" endHr="16" demand="7"/>
+      <demand line="M_G_RST1" startHr="17" endHr="18" demand="7"/>
+      <demand line="M_G_RST1" startHr="21" endHr="22" demand="7"/>
+      <demand line="S_M_RST1" startHr="5" endHr="6" demand="7"/>
+      <demand line="S_M_RST1" startHr="9" endHr="10" demand="7"/>
+      <demand line="S_M_RST1" startHr="13" endHr="14" demand="7"/>
+      <demand line="S_M_RST1" startHr="15" endHr="16" demand="7"/>
+      <demand line="S_M_RST1" startHr="17" endHr="18" demand="7"/>
+      <demand line="S_M_RST1" startHr="21" endHr="22" demand="7"/>
+      <demand line="M_S_RST1" startHr="5" endHr="6" demand="7"/>
+      <demand line="M_S_RST1" startHr="9" endHr="10" demand="7"/>
+      <demand line="M_S_RST1" startHr="13" endHr="14" demand="7"/>
+      <demand line="M_S_RST1" startHr="15" endHr="16" demand="7"/>
+      <demand line="M_S_RST1" startHr="17" endHr="18" demand="7"/>
+      <demand line="M_S_RST1" startHr="21" endHr="22" demand="7"/>
+      <demand line="G_HB_RST2" startHr="1" endHr="2" demand="7"/>
+      <demand line="G_HB_RST2" startHr="3" endHr="4" demand="7"/>
+      <demand line="G_HB_RST2" startHr="5" endHr="6" demand="7"/>
+      <demand line="G_HB_RST2" startHr="7" endHr="8" demand="7"/>
+      <demand line="G_HB_RST2" startHr="9" endHr="10" demand="7"/>
+      <demand line="G_HB_RST2" startHr="11" endHr="12" demand="7"/>
+      <demand line="G_HB_RST2" startHr="13" endHr="14" demand="7"/>
+      <demand line="G_HB_RST2" startHr="15" endHr="16" demand="7"/>
+      <demand line="G_HB_RST2" startHr="17" endHr="18" demand="7"/>
+      <demand line="G_HB_RST2" startHr="19" endHr="20" demand="7"/>
+      <demand line="G_HB_RST2" startHr="21" endHr="22" demand="7"/>
+      <demand line="G_HB_RST2" startHr="23" endHr="24" demand="7"/>
+      <demand line="HB_G_RST2" startHr="1" endHr="2" demand="7"/>
+      <demand line="HB_G_RST2" startHr="3" endHr="4" demand="7"/>
+      <demand line="HB_G_RST2" startHr="5" endHr="6" demand="7"/>
+      <demand line="HB_G_RST2" startHr="7" endHr="8" demand="7"/>
+      <demand line="HB_G_RST2" startHr="9" endHr="10" demand="7"/>
+      <demand line="HB_G_RST2" startHr="11" endHr="12" demand="7"/>
+      <demand line="HB_G_RST2" startHr="13" endHr="14" demand="7"/>
+      <demand line="HB_G_RST2" startHr="15" endHr="16" demand="7"/>
+      <demand line="HB_G_RST2" startHr="17" endHr="18" demand="7"/>
+      <demand line="HB_G_RST2" startHr="19" endHr="20" demand="7"/>
+      <demand line="HB_G_RST2" startHr="21" endHr="22" demand="7"/>
+      <demand line="HB_G_RST2" startHr="23" endHr="24" demand="7"/>
+      <demand line="HM_LU_RST2" startHr="1" endHr="2" demand="7"/>
+      <demand line="HM_LU_RST2" startHr="3" endHr="4" demand="7"/>
+      <demand line="HM_LU_RST2" startHr="5" endHr="6" demand="7"/>
+      <demand line="HM_LU_RST2" startHr="7" endHr="8" demand="7"/>
+      <demand line="HM_LU_RST2" startHr="9" endHr="10" demand="7"/>
+      <demand line="HM_LU_RST2" startHr="11" endHr="12" demand="7"/>
+      <demand line="HM_LU_RST2" startHr="13" endHr="14" demand="7"/>
+      <demand line="HM_LU_RST2" startHr="15" endHr="16" demand="7"/>
+      <demand line="HM_LU_RST2" startHr="17" endHr="18" demand="7"/>
+      <demand line="HM_LU_RST2" startHr="19" endHr="20" demand="7"/>
+      <demand line="HM_LU_RST2" startHr="21" endHr="22" demand="7"/>
+      <demand line="HM_LU_RST2" startHr="23" endHr="24" demand="7"/>
+      <demand line="LU_HM_RST2" startHr="1" endHr="2" demand="7"/>
+      <demand line="LU_HM_RST2" startHr="3" endHr="4" demand="7"/>
+      <demand line="LU_HM_RST2" startHr="5" endHr="6" demand="7"/>
+      <demand line="LU_HM_RST2" startHr="7" endHr="8" demand="7"/>
+      <demand line="LU_HM_RST2" startHr="9" endHr="10" demand="7"/>
+      <demand line="LU_HM_RST2" startHr="11" endHr="12" demand="7"/>
+      <demand line="LU_HM_RST2" startHr="13" endHr="14" demand="7"/>
+      <demand line="LU_HM_RST2" startHr="15" endHr="16" demand="7"/>
+      <demand line="LU_HM_RST2" startHr="17" endHr="18" demand="7"/>
+      <demand line="LU_HM_RST2" startHr="19" endHr="20" demand="7"/>
+      <demand line="LU_HM_RST2" startHr="21" endHr="22" demand="7"/>
+      <demand line="LU_HM_RST2" startHr="23" endHr="24" demand="7"/>
+      <demand line="S_LP_RST2" startHr="1" endHr="2" demand="7"/>
+      <demand line="S_LP_RST2" startHr="3" endHr="4" demand="7"/>
+      <demand line="S_LP_RST2" startHr="5" endHr="6" demand="7"/>
+      <demand line="S_LP_RST2" startHr="7" endHr="8" demand="7"/>
+      <demand line="S_LP_RST2" startHr="9" endHr="10" demand="7"/>
+      <demand line="S_LP_RST2" startHr="11" endHr="12" demand="7"/>
+      <demand line="S_LP_RST2" startHr="13" endHr="14" demand="7"/>
+      <demand line="S_LP_RST2" startHr="15" endHr="16" demand="7"/>
+      <demand line="S_LP_RST2" startHr="17" endHr="18" demand="7"/>
+      <demand line="S_LP_RST2" startHr="19" endHr="20" demand="7"/>
+      <demand line="S_LP_RST2" startHr="21" endHr="22" demand="7"/>
+      <demand line="S_LP_RST2" startHr="23" endHr="24" demand="7"/>
+      <demand line="LP_S_RST2" startHr="1" endHr="2" demand="7"/>
+      <demand line="LP_S_RST2" startHr="3" endHr="4" demand="7"/>
+      <demand line="LP_S_RST2" startHr="5" endHr="6" demand="7"/>
+      <demand line="LP_S_RST2" startHr="7" endHr="8" demand="7"/>
+      <demand line="LP_S_RST2" startHr="9" endHr="10" demand="7"/>
+      <demand line="LP_S_RST2" startHr="11" endHr="12" demand="7"/>
+      <demand line="LP_S_RST2" startHr="13" endHr="14" demand="7"/>
+      <demand line="LP_S_RST2" startHr="15" endHr="16" demand="7"/>
+      <demand line="LP_S_RST2" startHr="17" endHr="18" demand="7"/>
+      <demand line="LP_S_RST2" startHr="19" endHr="20" demand="7"/>
+      <demand line="LP_S_RST2" startHr="21" endHr="22" demand="7"/>
+      <demand line="LP_S_RST2" startHr="23" endHr="24" demand="7"/>
+      <demand line="G_HB_GT1" startHr="2" endHr="3" demand="7"/>
+      <demand line="G_HB_GT1" startHr="8" endHr="9" demand="7"/>
+      <demand line="G_HB_GT1" startHr="14" endHr="15" demand="7"/>
+      <demand line="G_HB_GT1" startHr="20" endHr="21" demand="7"/>
+      <demand line="HB_G_GT1" startHr="2" endHr="3" demand="7"/>
+      <demand line="HB_G_GT1" startHr="8" endHr="9" demand="7"/>
+      <demand line="HB_G_GT1" startHr="14" endHr="15" demand="7"/>
+      <demand line="HB_G_GT1" startHr="20" endHr="21" demand="7"/>
+      <demand line="G_M_GT1" startHr="2" endHr="3" demand="7"/>
+      <demand line="G_M_GT1" startHr="8" endHr="9" demand="7"/>
+      <demand line="G_M_GT1" startHr="14" endHr="15" demand="7"/>
+      <demand line="G_M_GT1" startHr="20" endHr="21" demand="7"/>
+      <demand line="M_G_GT1" startHr="2" endHr="3" demand="7"/>
+      <demand line="M_G_GT1" startHr="8" endHr="9" demand="7"/>
+      <demand line="M_G_GT1" startHr="14" endHr="15" demand="7"/>
+      <demand line="M_G_GT1" startHr="20" endHr="21" demand="7"/>
+      <demand line="LE_KRA_RST1" startHr="5" endHr="6" demand="7"/>
+      <demand line="LE_KRA_RST1" startHr="9" endHr="10" demand="7"/>
+      <demand line="LE_KRA_RST1" startHr="13" endHr="14" demand="7"/>
+      <demand line="LE_KRA_RST1" startHr="15" endHr="16" demand="7"/>
+      <demand line="LE_KRA_RST1" startHr="17" endHr="18" demand="7"/>
+      <demand line="LE_KRA_RST1" startHr="21" endHr="22" demand="7"/>
+      <demand line="KRA_LE_RST1" startHr="5" endHr="6" demand="7"/>
+      <demand line="KRA_LE_RST1" startHr="9" endHr="10" demand="7"/>
+      <demand line="KRA_LE_RST1" startHr="13" endHr="14" demand="7"/>
+      <demand line="KRA_LE_RST1" startHr="15" endHr="16" demand="7"/>
+      <demand line="KRA_LE_RST1" startHr="17" endHr="18" demand="7"/>
+      <demand line="KRA_LE_RST1" startHr="21" endHr="22" demand="7"/>
+      <demand line="KRA_LE_GT2" startHr="0" endHr="1" demand="7"/>
+      <demand line="KRA_LE_GT2" startHr="12" endHr="13" demand="7"/>
+      <demand line="LE_KRA_GT2" startHr="0" endHr="1" demand="7"/>
+      <demand line="LE_KRA_GT2" startHr="12" endHr="13" demand="7"/>
+    </line_demand>
+    <line_routes>
+      <line_route line="G_S_RST1" route="G_A_SK_HB_K_S">
+        <dur link="G_A">0.37</dur>
+        <dur link="A_SK">0.66</dur>
+        <dur link="SK_HB">0.59</dur>
+        <dur link="HB_K">0.73</dur>
+        <dur link="K_S">1.14</dur>
+      </line_route>
+      <line_route line="S_G_RST1" route="S_K_HB_SK_A_G">
+        <dur link="S_K">1.14</dur>
+        <dur link="K_HB">0.73</dur>
+        <dur link="HB_SK">0.59</dur>
+        <dur link="SK_A">0.66</dur>
+        <dur link="A_G">0.37</dur>
+      </line_route>
+      <line_route line="G_M_RST1" route="G_KB_VB_VGE_HBG_AGE_HM_HOR_E_LU_M">
+        <dur link="G_KB">0.3</dur>
+        <dur link="KB_VB">0.51</dur>
+        <dur link="VB_VGE">0.76</dur>
+        <dur link="VGE_HBG">0.44</dur>
+        <dur link="HBG_AGE">0.38</dur>
+        <dur link="AGE_HM">0.65</dur>
+        <dur link="HM_HOR">0.35</dur>
+        <dur link="HOR_E">0.33</dur>
+        <dur link="E_LU">0.26</dur>
+        <dur link="LU_M">0.22</dur>
+      </line_route>
+      <line_route line="M_G_RST1" route="M_LU_E_HOR_HM_AGE_HBG_VGE_VB_KB_G">
+        <dur link="M_LU">0.22</dur>
+        <dur link="LU_E">0.26</dur>
+        <dur link="E_HOR">0.33</dur>
+        <dur link="HOR_HM">0.35</dur>
+        <dur link="HM_AGE">0.65</dur>
+        <dur link="AGE_HBG">0.38</dur>
+        <dur link="HBG_VGE">0.44</dur>
+        <dur link="VGE_VB">0.76</dur>
+        <dur link="VB_KB">0.51</dur>
+        <dur link="KB_G">0.3</dur>
+      </line_route>
+      <line_route line="S_M_RST1" route="S_K_N_LP_MY_NS_AV_HM_HOR_E_LU_M">
+        <dur link="S_K">1.14</dur>
+        <dur link="K_N">0.53</dur>
+        <dur link="N_LP">0.34</dur>
+        <dur link="LP_MY">0.29</dur>
+        <dur link="MY_NS">0.53</dur>
+        <dur link="NS_AV">0.63</dur>
+        <dur link="AV_HM">0.67</dur>
+        <dur link="HM_HOR">0.26</dur>
+        <dur link="HOR_E">0.25</dur>
+        <dur link="E_LU">0.2</dur>
+        <dur link="LU_M">0.16</dur>
+      </line_route>
+      <line_route line="M_S_RST1" route="M_LU_E_HOR_HM_AV_NS_MY_LP_N_K_S">
+        <dur link="M_LU">0.16</dur>
+        <dur link="LU_E">0.2</dur>
+        <dur link="E_HOR">0.25</dur>
+        <dur link="HOR_HM">0.26</dur>
+        <dur link="HM_AV">0.67</dur>
+        <dur link="AV_NS">0.63</dur>
+        <dur link="NS_MY">0.53</dur>
+        <dur link="MY_LP">0.29</dur>
+        <dur link="LP_N">0.34</dur>
+        <dur link="N_K">0.53</dur>
+        <dur link="K_S">1.14</dur>
+      </line_route>
+      <line_route line="G_HB_RST2" route="G_A_SK_HB">
+        <dur link="G_A">0.46</dur>
+        <dur link="A_SK">0.81</dur>
+        <dur link="SK_HB">0.73</dur>
+      </line_route>
+      <line_route line="HB_G_RST2" route="HB_SK_A_G">
+        <dur link="HB_SK">0.73</dur>
+        <dur link="SK_A">0.81</dur>
+        <dur link="A_G">0.46</dur>
+      </line_route>
+      <line_route line="HM_LU_RST2" route="HM_HOR_E_LU">
+        <dur link="HM_HOR">0.37</dur>
+        <dur link="HOR_E">0.35</dur>
+        <dur link="E_LU">0.28</dur>
+      </line_route>
+      <line_route line="LU_HM_RST2" route="LU_E_HOR_HM">
+        <dur link="LU_E">0.28</dur>
+        <dur link="E_HOR">0.35</dur>
+        <dur link="HOR_HM">0.37</dur>
+      </line_route>
+      <line_route line="S_LP_RST2" route="S_K_N_LP">
+        <dur link="S_K">1.02</dur>
+        <dur link="K_N">0.47</dur>
+        <dur link="N_LP">0.31</dur>
+      </line_route>
+      <line_route line="LP_S_RST2" route="LP_N_K_S">
+        <dur link="LP_N">0.31</dur>
+        <dur link="N_K">0.47</dur>
+        <dur link="K_S">1.02</dur>
+      </line_route>
+      <line_route line="G_HB_GT1" route="G_A_SK_HB">
+        <dur link="G_A">0.69</dur>
+        <dur link="A_SK">1.22</dur>
+        <dur link="SK_HB">1.1</dur>
+      </line_route>
+      <line_route line="HB_G_GT1" route="HB_SK_A_G">
+        <dur link="HB_SK">1.1</dur>
+        <dur link="SK_A">1.22</dur>
+        <dur link="A_G">0.69</dur>
+      </line_route>
+      <line_route line="G_M_GT1" route="G_KB_VB_VGE_HBG_AGE_HM_HOR_E_LU_M">
+        <dur link="G_KB">0.44</dur>
+        <dur link="KB_VB">0.73</dur>
+        <dur link="VB_VGE">1.09</dur>
+        <dur link="VGE_HBG">0.62</dur>
+        <dur link="HBG_AGE">0.54</dur>
+        <dur link="AGE_HM">0.93</dur>
+        <dur link="HM_HOR">0.5</dur>
+        <dur link="HOR_E">0.47</dur>
+        <dur link="E_LU">0.37</dur>
+        <dur link="LU_M">0.31</dur>
+      </line_route>
+      <line_route line="M_G_GT1" route="M_LU_E_HOR_HM_AGE_HBG_VGE_VB_KB_G">
+        <dur link="M_LU">0.31</dur>
+        <dur link="LU_E">0.37</dur>
+        <dur link="E_HOR">0.47</dur>
+        <dur link="HOR_HM">0.5</dur>
+        <dur link="HM_AGE">0.93</dur>
+        <dur link="AGE_HBG">0.54</dur>
+        <dur link="HBG_VGE">0.62</dur>
+        <dur link="VGE_VB">1.09</dur>
+        <dur link="VB_KB">0.73</dur>
+        <dur link="KB_G">0.44</dur>
+      </line_route>
+      <line_route line="LE_KRA_RST1" route="LE_BDN_GVE_KRA">
+        <dur link="LE_BDN">0.45</dur>
+        <dur link="BDN_GVE">2.13</dur>
+        <dur link="GVE_KRA">1.42</dur>
+      </line_route>
+      <line_route line="KRA_LE_RST1" route="KRA_GVE_BDN_LE">
+        <dur link="KRA_GVE">1.42</dur>
+        <dur link="GVE_BDN">2.13</dur>
+        <dur link="BDN_LE">0.45</dur>
+      </line_route>
+      <line_route line="KRA_LE_GT2" route="KRA_GVE_BDN_LE">
+        <dur link="KRA_GVE">2.13</dur>
+        <dur link="GVE_BDN">3.2</dur>
+        <dur link="BDN_LE">0.67</dur>
+      </line_route>
+      <line_route line="LE_KRA_GT2" route="LE_BDN_GVE_KRA">
+        <dur link="LE_BDN">0.67</dur>
+        <dur link="BDN_GVE">3.2</dur>
+        <dur link="GVE_KRA">2.13</dur>
+      </line_route>
+    </line_routes>
+    <trains>
+      <train id="G_S_RST1_0_0" line="G_S_RST1" departure="2024-01-03 05:00:00" arrival="2024-01-03 08:30:00"/>
+      <train id="G_S_RST1_0_1" line="G_S_RST1" departure="2024-01-03 09:00:00" arrival="2024-01-03 12:30:00"/>
+      <train id="G_S_RST1_0_2" line="G_S_RST1" departure="2024-01-03 13:00:00" arrival="2024-01-03 16:30:00"/>
+      <train id="G_S_RST1_0_3" line="G_S_RST1" departure="2024-01-03 15:00:00" arrival="2024-01-03 18:30:00"/>
+      <train id="G_S_RST1_0_4" line="G_S_RST1" departure="2024-01-03 17:00:00" arrival="2024-01-03 20:30:00"/>
+      <train id="G_S_RST1_0_5" line="G_S_RST1" departure="2024-01-03 21:00:00" arrival="2024-01-04 00:30:00"/>
+      <train id="G_S_RST1_1_0" line="G_S_RST1" departure="2024-01-04 05:00:00" arrival="2024-01-04 08:30:00"/>
+      <train id="G_S_RST1_1_1" line="G_S_RST1" departure="2024-01-04 09:00:00" arrival="2024-01-04 12:30:00"/>
+      <train id="G_S_RST1_1_2" line="G_S_RST1" departure="2024-01-04 13:00:00" arrival="2024-01-04 16:30:00"/>
+      <train id="G_S_RST1_1_3" line="G_S_RST1" departure="2024-01-04 15:00:00" arrival="2024-01-04 18:30:00"/>
+    </trains>
+    <traffic_year>
+      <period type="normal" startDate="2024-01-01" endDate="2024-12-31">
+        <day weekday="0" dataDate="2024-01-03"/>
+        <day weekday="1" dataDate="2024-01-04"/>
+        <day weekday="2" dataDate="2024-01-05"/>
+        <day weekday="3" dataDate="2024-01-06"/>
+        <day weekday="4" dataDate="2024-01-07"/>
+        <day weekday="5" dataDate="2024-01-08"/>
+        <day weekday="6" dataDate="2024-01-09"/>
+      </period>
+      <period type="easter" startDate="2024-03-29" endDate="2024-04-01">
+        <day weekday="4" dataDate="2024-04-14"/>
+        <day weekday="5" dataDate="2024-04-15"/>
+        <day weekday="6" dataDate="2024-04-16"/>
+        <day weekday="0" dataDate="2024-04-17"/>
+      </period>
+      <period type="summer" startDate="2024-07-15" endDate="2024-08-04">
+        <day weekday="0" dataDate="2024-07-18"/>
+        <day weekday="1" dataDate="2024-07-19"/>
+        <day weekday="2" dataDate="2024-07-20"/>
+        <day weekday="3" dataDate="2024-07-21"/>
+        <day weekday="4" dataDate="2024-07-22"/>
+        <day weekday="5" dataDate="2024-07-23"/>
+        <day weekday="6" dataDate="2024-07-24"/>
+      </period>
+    </traffic_year>
+  </traffic>
+  <resources>
+    <resource id="crew1" name="Maintenance crew 1"/>
+    <resource id="crew2" name="Maintenance crew 2"/>
+    <resource id="equip1" name="Special equipment 1"/>
+  </resources>
+  <projects>
+    <project id="214" desc="Switch change Alingsas" earliestStart="2066-03-08 00:00:00" latestEnd="2066-07-04 23:59:59">
+      <task id="214_1" desc="Preparatory work" durationHr="8">
+        <traffic_blocking link="G_A" amount="50"/>
+        <requiredResources>
+          <resource id="crew1" amount="1"/>
+        </requiredResources>
+      </task>
+      <task id="214_2" desc="Main closure" durationHr="48">
+        <traffic_blocking link="G_A" amount="100"/>
+        <requiredResources>
+          <resource id="crew1" amount="1"/>
+          <resource id="equip1" amount="1"/>
+        </requiredResources>
+      </task>
+      <task id="214_3" desc="Follow-up work" durationHr="8">
+        <traffic_blocking link="G_A" amount="50"/>
+        <requiredResources>
+          <resource id="crew1" amount="1"/>
+        </requiredResources>
+      </task>
+    </project>
+    <project id="526" desc="Hassleholm railway yard catenary refurbishment" earliestStart="2066-03-08 00:00:00" latestEnd="2066-05-23 23:59:59">
+      <task id="526_1" desc="Main closure" durationHr="72">
+        <traffic_blocking link="HM_HOR" amount="100"/>
+        <requiredResources>
+          <resource id="crew1" amount="1"/>
+          <resource id="equip1" amount="1"/>
+        </requiredResources>
+      </task>
+    </project>
+    <project id="450" desc="Hassleholm railway yard platform renewal" earliestStart="2066-03-08 00:00:00" latestEnd="2066-12-12 23:59:59">
+      <task id="450_1" desc="Service window" durationHr="6" count="6">
+        <traffic_blocking link="HM_HOR" amount="esp"/>
+        <requiredResources>
+          <resource id="crew1" amount="1"/>
+        </requiredResources>
+      </task>
+    </project>
+    <project id="877" desc="Varberg-Hamra double track tunnel" earliestStart="2066-03-08 00:00:00" latestEnd="2066-11-07 23:59:59">
+      <task id="877_1" desc="Main closure" durationHr="96">
+        <traffic_blocking link="KB_VB" amount="100"/>
+        <requiredResources>
+          <resource id="crew1" amount="1"/>
+          <resource id="equip1" amount="1"/>
+        </requiredResources>
+      </task>
+    </project>
+    <project id="880" desc="Varberg-Hamra double track tunnel" earliestStart="2066-03-08 00:00:00" latestEnd="2066-12-12 23:59:59">
+      <task id="880_1" desc="Service window" durationHr="8">
+        <traffic_blocking link="VGE_TOR" amount="50"/>
+        <requiredResources>
+          <resource id="crew1" amount="1"/>
+        </requiredResources>
+      </task>
+    </project>
+    <project id="N001" desc="Catenary replacement Bracke-Langsele" earliestStart="2066-03-08 00:00:00" latestEnd="2066-09-05 23:59:59">
+      <task id="N001_1" desc="Traffic disruption 10-week total closure" durationHr="1680">
+        <traffic_blocking link="BRC_LAS" amount="100"/>
+        <requiredResources>
+          <resource id="crew1" amount="1"/>
+          <resource id="equip1" amount="1"/>
+        </requiredResources>
+      </task>
+    </project>
+    <project id="N002" desc="Catenary replacement Bracke-Langsele" earliestStart="2066-03-08 00:00:00" latestEnd="2066-09-05 23:59:59">
+      <task id="N002_1" desc="Service window daily 8-hour shifts" durationHr="8" count="70">
+        <traffic_blocking link="BRC_LAS" amount="100"/>
+        <requiredResources>
+          <resource id="crew1" amount="1"/>
+        </requiredResources>
+      </task>
+    </project>
+    <project id="N003" desc="Track work Hudiksvall-Sundsvall" earliestStart="2066-03-08 00:00:00" latestEnd="2066-09-05 23:59:59">
+      <task id="N003_1" desc="Service window daily 6-hour shifts on weekdays" durationHr="6" count="50">
+        <traffic_blocking link="HDV_SUC" amount="100"/>
+        <requiredResources>
+          <resource id="crew1" amount="1"/>
+        </requiredResources>
+      </task>
+    </project>
+    <project id="N004" desc="Track work Boden-Gallivare" earliestStart="2066-03-08 00:00:00" latestEnd="2066-09-05 23:59:59">
+      <task id="N004_1" desc="Service window daily 8-hour shifts" durationHr="8" count="60">
+        <traffic_blocking link="BDN_GVE" amount="100"/>
+        <requiredResources>
+          <resource id="crew1" amount="1"/>
+        </requiredResources>
+      </task>
+    </project>
+  </projects>
+  <params>
+    <keyVal key="cp_block">1.0</keyVal>
+    <keyVal key="cp_bs">0.5</keyVal>
+    <keyVal key="*">100</keyVal>
+    <keyVal key="ct_cancel_RST">10</keyVal>
+    <keyVal key="ct_cancel_GT">5</keyVal>
+    <keyVal key="ct_post_RST">5</keyVal>
+    <keyVal key="ct_post_GT">2</keyVal>
+    <keyVal key="ct_time_RST">1</keyVal>
+    <keyVal key="ct_time_GT">0.5</keyVal>
+    <keyVal key="mx_inc_rel_RST">1.2</keyVal>
+    <keyVal key="mx_inc_abs_GT">2.0</keyVal>
+  </params>
+  <plan start="2024-01-01 00:00:00" end="2024-12-31 23:59:59" period_length="8" traffic_start="2024-01-01 00:00:00" traffic_end="2024-12-31 23:59:59"/>
+</problem>

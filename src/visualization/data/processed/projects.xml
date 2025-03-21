@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problem>
+  <resources>
+    <resource id="crew1" name="Maintenance crew 1" />
+    <resource id="crew2" name="Maintenance crew 2" />
+    <resource id="equip1" name="Special equipment 1" />
+  </resources>
+  <projects>
+    <project id="214" desc="Switch change Vårgårda" earliestStart="v2410" latestEnd="v2426">
+      <task id="214_1" desc="Preparatory work" durationHr="8">
+        <traffic_blocking link="G_A" amount="50" />
+        <requiredResources>
+          <resource id="crew1" amount="1" />
+        </requiredResources>
+      </task>
+      <task id="214_2" desc="Main closure" durationHr="48">
+        <traffic_blocking link="G_A" amount="100" />
+        <requiredResources>
+          <resource id="crew1" amount="1" />
+          <resource id="equip1" amount="1" />
+        </requiredResources>
+      </task>
+      <task id="214_3" desc="Follow-up work" durationHr="8">
+        <traffic_blocking link="G_A" amount="50" />
+        <requiredResources>
+          <resource id="crew1" amount="1" />
+        </requiredResources>
+      </task>
+    </project>
+    <project id="180" desc="Töreboda bridge over the Göta Canal" earliestStart="v2410" latestEnd="v2426">
+      <task id="180_1" desc="Bridge replacement" durationHr="96">
+        <traffic_blocking link="TEO_HD" amount="100" />
+        <requiredResources>
+          <resource id="crew1" amount="1" />
+          <resource id="equip1" amount="1" />
+        </requiredResources>
+      </task>
+    </project>
+    <project id="526" desc="Hässleholm railway yard, catenary refurbishment" earliestStart="v2410" latestEnd="v2420">
+      <task id="526_1" desc="Main closure" durationHr="72">
+        <traffic_blocking link="HM_HÖ" amount="100" />
+        <requiredResources>
+          <resource id="crew1" amount="1" />
+          <resource id="equip1" amount="1" />
+        </requiredResources>
+      </task>
+    </project>
+    <project id="450" desc="Hässleholm railway yard, catenary refurbishment" earliestStart="v2410" latestEnd="v2449">
+      <task id="450_1" desc="Service window" durationHr="6" count="6">
+        <traffic_blocking link="HM_HÖ" amount="esp" />
+        <requiredResources>
+          <resource id="crew1" amount="1" />
+        </requiredResources>
+      </task>
+    </project>
+    <project id="877" desc="Varberg-Hamra, double track, tunnel" earliestStart="v2410" latestEnd="v2444">
+      <task id="877_1" desc="Main closure" durationHr="96">
+        <traffic_blocking link="KB_VB" amount="100" />
+        <requiredResources>
+          <resource id="crew1" amount="1" />
+          <resource id="equip1" amount="1" />
+        </requiredResources>
+      </task>
+    </project>
+    <project id="880" desc="Varberg-Hamra, double track, tunnel" earliestStart="v2410" latestEnd="v2449">
+      <task id="880_1" desc="Service window" durationHr="8">
+        <traffic_blocking link="VRÖ_TEO" amount="50" />
+        <requiredResources>
+          <resource id="crew1" amount="1" />
+        </requiredResources>
+      </task>
+    </project>
+    <project id="N001" desc="Catenary replacement Bräcke-Långsele" earliestStart="v2410" latestEnd="v2435">
+      <task id="N001_1" desc="Traffic disruption (10-week total closure)" durationHr="1680">
+        <traffic_blocking link="BÄ_LSL" amount="100" />
+        <requiredResources>
+          <resource id="crew1" amount="1" />
+          <resource id="equip1" amount="1" />
+        </requiredResources>
+      </task>
+    </project>
+    <project id="N002" desc="Catenary replacement Bräcke-Långsele" earliestStart="v2410" latestEnd="v2435">
+      <task id="N002_1" desc="Service window (daily 8-hour shifts)" durationHr="8" count="70">
+        <traffic_blocking link="BÄ_LSL" amount="100" />
+        <requiredResources>
+          <resource id="crew1" amount="1" />
+        </requiredResources>
+      </task>
+    </project>
+    <project id="N003" desc="Track work Hudiksvall-Sundsvall" earliestStart="v2410" latestEnd="v2435">
+      <task id="N003_1" desc="Service window (daily 6-hour shifts on weekdays)" durationHr="6" count="50">
+        <traffic_blocking link="HD_SU" amount="100" />
+        <requiredResources>
+          <resource id="crew1" amount="1" />
+        </requiredResources>
+      </task>
+    </project>
+    <project id="N004" desc="Track work Boden-Gällivare" earliestStart="v2410" latestEnd="v2435">
+      <task id="N004_1" desc="Service window (daily 8-hour shifts)" durationHr="8" count="60">
+        <traffic_blocking link="BD_GV" amount="100" />
+        <requiredResources>
+          <resource id="crew1" amount="1" />
+        </requiredResources>
+      </task>
+    </project>
+  </projects>
+  <params>
+    <keyVal key="cp_block">1.0</keyVal>
+    <keyVal key="cp_bs">0.5</keyVal>
+    <keyVal key="*">10</keyVal>
+    <keyVal key="RST">10</keyVal>
+    <keyVal key="GT">5</keyVal>
+    <keyVal key="RST">10</keyVal>
+    <keyVal key="GT">5</keyVal>
+    <keyVal key="RST">1.2</keyVal>
+    <keyVal key="GT">1.5</keyVal>
+  </params>
+</problem>

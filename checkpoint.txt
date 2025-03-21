@@ -1,0 +1,196 @@
+# An Integrated Railway Maintenance and Traffic Optimization System
+
+## 1. Comprehensive Overview
+
+SATT-BP (Short for "Co-planning of traffic-affecting measures and traffic flows for track work planning") is a sophisticated optimization tool designed to solve a critical problem in railway infrastructure management: **how to schedule track maintenance projects while minimizing disruption to train traffic**. 
+
+The system implements a bi-level optimization approach where:
+- Upper level: Schedules track maintenance projects with time constraints and resource requirements
+- Lower level: Optimizes train traffic flows given capacity restrictions from maintenance
+
+## 2. Code Structure and Organization
+
+The codebase is organized in a modular structure with clear separation of concerns:
+
+```
+satt-bp/
+├── data/
+│   ├── input/       # Raw input data (network, traffic, maintenance)
+│   ├── processed/   # Processed data in XML format
+│   └── output/      # Results from optimization
+├── src/
+│   ├── data_processing/     # Data transformation modules
+│   │   ├── network2xml.py   # Network data processing
+│   │   ├── traffic2xml.py   # Traffic data processing
+│   │   ├── TDA2xml.py       # Track work data processing
+│   │   ├── getReroute.py    # Generate train rerouting alternatives
+│   │   ├── getCase.py       # Create study cases
+│   │   └── assignDates.py   # Map traffic to specific dates
+│   ├── optimization_models/ # Core optimization logic
+│   │   ├── plan_data.py     # Common data structures
+│   │   ├── proj_sched.py    # Project scheduling model
+│   │   └── traffic_flow.py  # Traffic flow optimization
+│   ├── execution/           # Execution framework
+│   │   ├── tcr_opt.py       # Main optimizer class
+│   │   └── run.py           # Command-line interface
+│   └── visualization/       # Data visualization
+│       └── dashboard.py     # Streamlit dashboard for results
+```
+
+## 3. Core Data Models and Structures
+
+The system models three key domains:
+
+### 3.1. Railway Network Model
+- **Nodes**: Represent stations, junctions, major railway facilities
+- **Links**: Track sections connecting nodes, with properties:
+  - Number of tracks (single, double)
+  - Length (km)
+  - Default capacity (trains per hour)
+
+### 3.2. Traffic Model
+- **Train Types**: Categories like passenger (RST) and freight (GT)
+- **Traffic Lines**: Origin-destination pairs with uniform characteristics
+- **Demand**: Number of trains departing within specific time windows
+- **Routes**: Sequence of links traversed by each traffic line
+- **Alternative Routes**: Possible diversions when primary routes are blocked
+
+### 3.3. Project Model
+- **Projects**: Track maintenance activities with time constraints
+- **Tasks**: Sub-activities within projects
+  - Duration
+  - Required resources
+  - Traffic impact (capacity reduction)
+  - Repetition patterns
+- **Dependencies**: Sequencing and timing constraints between activities
+
+## 4. Algorithmic Approach
+
+SATT-BP employs a **bi-level optimization framework** where:
+
+### 4.1. Upper Level (Project Scheduling)
+- **Mixed Integer Programming (MIP)** model
+- **Objective**: Minimize combined cost of:
+  - Traffic disruption
+  - Project delays/cancellations
+  - Resource utilization
+- **Constraints**:
+  - Time windows for project activities
+  - Resource limitations
+  - Sequential dependencies between activities
+
+### 4.2. Lower Level (Traffic Flow)
+- **Network Flow Optimization** model
+- **Objective**: Minimize combined cost of:
+  - Train cancellations
+  - Train delays/postponements
+  - Extended travel times (detours)
+- **Constraints**:
+  - Link capacity limitations (from scheduled maintenance)
+  - Traffic demand satisfaction
+  - Maximum allowed travel time increases
+
+### 4.3. Integration Method
+The system iterates between these two levels until convergence:
+1. Solve traffic flow with no disruptions
+2. Schedule projects considering traffic patterns
+3. Resolve traffic flow with capacity restrictions from projects
+4. Repeat until solution stabilizes
+
+## 5. Input-Output Data Flow
+
+### 5.1. Input Data
+- **Network Data**: Railway infrastructure (XML format)
+  - Derived from Swedish railway network database
+  - Contains nodes, links, and their properties
+- **Traffic Data**: Train schedules and demands (XML format)
+  - Derived from LUPP (Swedish train scheduling system)
+  - Contains train types, routes, and volumes
+- **Project Data**: Maintenance requirements (XML format)
+  - Derived from TPÅ coordination sheet (Excel)
+  - Contains project activities, durations, and constraints
+
+### 5.2. Output Data
+- **Project Schedule**: Optimized maintenance timetable
+  - Start and end times for each activity
+  - Resource allocation
+- **Traffic Impact**: Quantified disruption metrics
+  - Cancelled trains (by type and route)
+  - Delayed/shifted trains
+  - Rerouted trains with alternative paths
+- **Capacity Utilization**: Network load visualization
+  - Link-by-link utilization over time
+  - Bottleneck identification
+
+## 6. Key Components in Detail
+
+### 6.1. Data Processing Modules
+- **network2xml.py**: Transforms detailed track data into aggregated network model
+- **traffic2xml.py**: Processes train schedules into traffic demand and routes
+- **TDA2xml.py**: Converts maintenance planning spreadsheets into structured project data
+- **getReroute.py**: Automatically generates alternative routes when links are blocked
+
+### 6.2. Optimization Models
+- **plan_data.py**: Contains core data structures shared by both models
+  - Network: Railway infrastructure representation
+  - Plan: Time periods and planning horizon
+- **proj_sched.py**: Project scheduling optimization
+  - Resources: Maintenance crews and equipment
+  - Projects: Activities with time constraints
+  - ProjectSchedulingModel: MIP solver for optimal scheduling
+- **traffic_flow.py**: Traffic allocation optimization
+  - Demand: Train volumes by line and time
+  - Routes: Train paths through the network
+  - TrafficFlowModel: Network flow solver for traffic allocation
+
+### 6.3. Execution Framework
+- **tcr_opt.py**: Main optimizer class that coordinates:
+  - Problem parsing from different file formats
+  - Integrated solution of both models
+  - Result processing and output generation
+- **run.py**: Command-line interface with arguments for:
+  - Input file selection
+  - Model selection (scheduling, traffic, or integrated)
+  - Various filters and optimization parameters
+
+### 6.4. Visualization
+- **dashboard.py**: Streamlit-based interactive dashboard for:
+  - Schedule visualization (Gantt charts)
+  - Network visualization with capacity utilization
+  - Traffic impact analysis and statistics
+
+## 7. Implementation Details and Features
+
+### 7.1. Mathematical Model Features
+- **Time Discretization**: Operations divided into periods (typically 8 hours)
+- **Capacity Modeling**: Aggregated train movements per period
+- **Coordination Factor**: Parameter controlling how track works interact
+- **Traffic Segmentation**: Different handling of passenger vs. freight trains
+
+### 7.2. Practical Features
+- **Fixed Track Closures**: Support for pre-determined maintenance work
+- **Time Filtering**: Focus analysis on specific time periods
+- **Project Filtering**: Select subset of projects for analysis
+- **Daily Analysis**: Detailed traffic impact for each affected day
+- **Visualization**: Interactive displays of schedules and impacts
+
+### 7.3. Solution Methodology
+- **Step-by-Step Approach**:
+  1. Calculate undisturbed traffic flows
+  2. Schedule track work considering traffic patterns
+  3. Re-optimize traffic with maintenance constraints
+  4. Iterate until convergence or maximum iterations
+- **Large-Scale Capability**: Handles nationwide railway networks
+- **Case Study Support**: Built for real-world analysis scenarios
+
+## 8. Practical Applications and Use Cases
+
+The SATT-BP tool addresses several practical challenges in railway planning:
+
+1. **Long-term infrastructure planning**: Evaluate impact of maintenance strategies
+2. **Coordination of multiple projects**: Find optimal schedules minimizing combined impact
+3. **Traffic impact analysis**: Quantify effects on specific train services
+4. **Alternative routing evaluation**: Test diversion strategies during closures
+5. **Capacity analysis**: Identify bottlenecks in the railway network
+
+By integrating maintenance planning with traffic optimization, SATT-BP provides quantitative decision support for complex railway infrastructure management problems that were previously handled primarily through manual coordination and experience-based approaches.

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<network>
+  <nodes>
+    <node id="G" name="Gothenburg" lat="57.7089" lon="11.9746" merge_group="G"/>
+    <node id="A" name="Alingsås" lat="57.9295" lon="12.5337"/>
+    <node id="SK" name="Skövde" lat="58.389" lon="13.8456"/>
+    <node id="HB" name="Hallsberg" lat="59.0664" lon="15.1098" merge_group="HB"/>
+    <node id="NR" name="Norrköping" lat="58.5977" lon="16.1826"/>
+    <node id="LI" name="Linköping" lat="58.4108" lon="15.6213"/>
+    <node id="S" name="Stockholm" lat="59.3293" lon="18.0686" merge_group="S"/>
+    <node id="NK" name="Nässjö" lat="57.6526" lon="14.6946"/>
+    <node id="AV" name="Alvesta" lat="56.899" lon="14.556"/>
+    <node id="HM" name="Hässleholm" lat="56.1589" lon="13.7668"/>
+    <node id="LU" name="Lund" lat="55.7047" lon="13.191" merge_group="LU"/>
+    <node id="M" name="Malmö" lat="55.605" lon="13.0038" merge_group="M"/>
+    <node id="VB" name="Varberg" lat="57.1055" lon="12.2502"/>
+    <node id="KB" name="Kungsbacka" lat="57.4874" lon="12.0798"/>
+    <node id="BS" name="Borås" lat="57.721" lon="12.9401"/>
+    <node id="ÄN" name="Älvängen" lat="58.0116" lon="12.1147"/>
+    <node id="E" name="Eslöv" lat="55.8391" lon="13.3035"/>
+    <node id="HÖ" name="Höör" lat="55.9374" lon="13.5426"/>
+    <node id="GDÖ" name="Degerfors" lat="59.2335" lon="14.428"/>
+    <node id="T" name="Töreboda" lat="58.7062" lon="14.1229"/>
+    <node id="HD" name="Hudiksvall" lat="61.7279" lon="17.1044"/>
+    <node id="SU" name="Sundsvall" lat="62.3908" lon="17.3069"/>
+    <node id="BÄ" name="Bräcke" lat="62.7508" lon="15.4195"/>
+    <node id="LSL" name="Långsele" lat="63.1745" lon="17.1063"/>
+    <node id="UÅ" name="Umeå" lat="63.8284" lon="20.2597"/>
+    <node id="VN" name="Vännäs" lat="63.9062" lon="19.7503"/>
+    <node id="BD" name="Boden" lat="65.8256" lon="21.6906"/>
+    <node id="LY" name="Luleå" lat="65.5842" lon="22.1547"/>
+    <node id="GV" name="Gällivare" lat="67.1367" lon="20.6599"/>
+    <node id="KA" name="Kiruna" lat="67.8558" lon="20.2253"/>
+    <node id="K" name="Karlstad" lat="59.3793" lon="13.5036"/>
+    <node id="KIL" name="Kil" lat="59.5038" lon="13.3196"/>
+    <node id="TEO" name="Teckomatorp" lat="55.8704" lon="13.0784"/>
+    <node id="VRÖ" name="Veinge" lat="56.4833" lon="13.0333"/>
+    <node id="HPBG" name="Helsingborg" lat="56.0465" lon="12.6945"/>
+    <node id="D" name="Ängelholm" lat="56.2428" lon="12.8605"/>
+  </nodes>
+  <links>
+    <link id="G_A" from="G" to="A" length="46" tracks="2" capacity="10"/>
+    <link id="A_SK" from="A" to="SK" length="81" tracks="2" capacity="10"/>
+    <link id="SK_HB" from="SK" to="HB" length="73" tracks="2" capacity="10"/>
+    <link id="HB_NK" from="HB" to="NK" length="172" tracks="1" capacity="5"/>
+    <link id="NK_AV" from="NK" to="AV" length="77" tracks="2" capacity="10"/>
+    <link id="AV_HM" from="AV" to="HM" length="82" tracks="2" capacity="10"/>
+    <link id="HM_HÖ" from="HM" to="HÖ" length="32" tracks="2" capacity="10"/>
+    <link id="HÖ_E" from="HÖ" to="E" length="30" tracks="2" capacity="10"/>
+    <link id="E_LU" from="E" to="LU" length="24" tracks="2" capacity="10"/>
+    <link id="LU_M" from="LU" to="M" length="20" tracks="2" capacity="10"/>
+    <link id="G_ÄN" from="G" to="ÄN" length="30" tracks="2" capacity="10"/>
+    <link id="G_KB" from="G" to="KB" length="28" tracks="2" capacity="10"/>
+    <link id="KB_VB" from="KB" to="VB" length="47" tracks="1" capacity="5"/>
+    <link id="VB_VRÖ" from="VB" to="VRÖ" length="70" tracks="2" capacity="10"/>
+    <link id="VRÖ_HPBG" from="VRÖ" to="HPBG" length="40" tracks="2" capacity="10"/>
+    <link id="HPBG_D" from="HPBG" to="D" length="35" tracks="2" capacity="10"/>
+    <link id="D_HM" from="D" to="HM" length="60" tracks="2" capacity="10"/>
+    <link id="VRÖ_TEO" from="VRÖ" to="TEO" length="60" tracks="1" capacity="5"/>
+    <link id="TEO_HD" from="TEO" to="HD" length="40" tracks="1" capacity="5"/>
+    <link id="G_BS" from="G" to="BS" length="64" tracks="1" capacity="5"/>
+    <link id="BS_NK" from="BS" to="NK" length="132" tracks="1" capacity="5"/>
+    <link id="GDÖ_SK" from="GDÖ" to="SK" length="85" tracks="1" capacity="5"/>
+    <link id="HB_GDÖ" from="HB" to="GDÖ" length="45" tracks="1" capacity="5"/>
+    <link id="HD_SU" from="HD" to="SU" length="86" tracks="1" capacity="5"/>
+    <link id="SU_BÄ" from="SU" to="BÄ" length="100" tracks="1" capacity="5"/>
+    <link id="BÄ_LSL" from="BÄ" to="LSL" length="120" tracks="1" capacity="5"/>
+    <link id="LSL_VN" from="LSL" to="VN" length="153" tracks="1" capacity="5"/>
+    <link id="VN_UÅ" from="VN" to="UÅ" length="32" tracks="1" capacity="5"/>
+    <link id="UÅ_BD" from="UÅ" to="BD" length="210" tracks="1" capacity="5"/>
+    <link id="BD_LY" from="BD" to="LY" length="38" tracks="1" capacity="5"/>
+    <link id="BD_GV" from="BD" to="GV" length="180" tracks="1" capacity="5"/>
+    <link id="GV_KA" from="GV" to="KA" length="120" tracks="1" capacity="5"/>
+    <link id="A_G" from="A" to="G" length="46" tracks="2" capacity="10"/>
+    <link id="SK_A" from="SK" to="A" length="81" tracks="2" capacity="10"/>
+    <link id="HB_SK" from="HB" to="SK" length="73" tracks="2" capacity="10"/>
+    <link id="NK_HB" from="NK" to="HB" length="172" tracks="1" capacity="5"/>
+    <link id="AV_NK" from="AV" to="NK" length="77" tracks="2" capacity="10"/>
+    <link id="HM_AV" from="HM" to="AV" length="82" tracks="2" capacity="10"/>
+    <link id="HÖ_HM" from="HÖ" to="HM" length="32" tracks="2" capacity="10"/>
+    <link id="E_HÖ" from="E" to="HÖ" length="30" tracks="2" capacity="10"/>
+    <link id="LU_E" from="LU" to="E" length="24" tracks="2" capacity="10"/>
+    <link id="M_LU" from="M" to="LU" length="20" tracks="2" capacity="10"/>
+    <link id="S_LI" from="S" to="LI" length="200" tracks="2" capacity="10"/>
+    <link id="LI_S" from="LI" to="S" length="200" tracks="2" capacity="10"/>
+    <link id="LI_NR" from="LI" to="NR" length="50" tracks="2" capacity="10"/>
+    <link id="NR_LI" from="NR" to="LI" length="50" tracks="2" capacity="10"/>
+    <link id="NR_HB" from="NR" to="HB" length="100" tracks="2" capacity="10"/>
+    <link id="HB_NR" from="HB" to="NR" length="100" tracks="2" capacity="10"/>
+    <link id="SU_HM" from="SU" to="HM" length="180" tracks="1" capacity="5"/>
+    <link id="HM_SU" from="HM" to="SU" length="180" tracks="1" capacity="5"/>
+    <link id="BÄ_SU" from="BÄ" to="SU" length="100" tracks="1" capacity="5"/>
+    <link id="GV_BD" from="GV" to="BD" length="180" tracks="1" capacity="5"/>
+    <link id="KA_GV" from="KA" to="GV" length="120" tracks="1" capacity="5"/>
+    <link id="UÅ_VN" from="UÅ" to="VN" length="32" tracks="1" capacity="5"/>
+    <link id="VN_LSL" from="VN" to="LSL" length="153" tracks="1" capacity="5"/>
+    <link id="LSL_BÄ" from="LSL" to="BÄ" length="120" tracks="1" capacity="5"/>
+    <link id="BD_UÅ" from="BD" to="UÅ" length="210" tracks="1" capacity="5"/>
+    <link id="LY_BD" from="LY" to="BD" length="38" tracks="1" capacity="5"/>
+    <link id="HM_D" from="HM" to="D" length="60" tracks="2" capacity="10"/>
+    <link id="D_HPBG" from="D" to="HPBG" length="35" tracks="2" capacity="10"/>
+    <link id="HPBG_VRÖ" from="HPBG" to="VRÖ" length="40" tracks="2" capacity="10"/>
+    <link id="VRÖ_VB" from="VRÖ" to="VB" length="70" tracks="2" capacity="10"/>
+    <link id="VB_KB" from="VB" to="KB" length="47" tracks="1" capacity="5"/>
+    <link id="KB_G" from="KB" to="G" length="28" tracks="2" capacity="10"/>
+    <link id="ÄN_G" from="ÄN" to="G" length="30" tracks="2" capacity="10"/>
+    <link id="TEO_VRÖ" from="TEO" to="VRÖ" length="60" tracks="1" capacity="5"/>
+    <link id="HD_TEO" from="HD" to="TEO" length="40" tracks="1" capacity="5"/>
+    <link id="BS_G" from="BS" to="G" length="64" tracks="1" capacity="5"/>
+    <link id="NK_BS" from="NK" to="BS" length="132" tracks="1" capacity="5"/>
+    <link id="SK_GDÖ" from="SK" to="GDÖ" length="85" tracks="1" capacity="5"/>
+    <link id="GDÖ_HB" from="GDÖ" to="HB" length="45" tracks="1" capacity="5"/>
+  </links>
+</network>

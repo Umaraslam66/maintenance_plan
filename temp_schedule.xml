@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<traffic>
+  <train_types>
+    <train_type id="RST" name="Passenger Train"/>
+    <train_type id="GT" name="Freight Train"/>
+  </train_types>
+  <lines>
+    <line id="G_S_RST1" origin="G" destination="S" train_type="RST"/>
+    <line id="S_G_RST1" origin="S" destination="G" train_type="RST"/>
+    <line id="G_M_RST1" origin="G" destination="M" train_type="RST"/>
+    <line id="M_G_RST1" origin="M" destination="G" train_type="RST"/>
+    <line id="G_HB_RST2" origin="G" destination="HB" train_type="RST"/>
+    <line id="HB_G_RST2" origin="HB" destination="G" train_type="RST"/>
+    <line id="HM_LU_RST2" origin="HM" destination="LU" train_type="RST"/>
+    <line id="LU_HM_RST2" origin="LU" destination="HM" train_type="RST"/>
+    <line id="G_HB_GT1" origin="G" destination="HB" train_type="GT"/>
+    <line id="HB_G_GT1" origin="HB" destination="G" train_type="GT"/>
+    <line id="G_M_GT1" origin="G" destination="M" train_type="GT"/>
+    <line id="M_G_GT1" origin="M" destination="G" train_type="GT"/>
+    <line id="S_LY_RST1" origin="S" destination="LY" train_type="RST"/>
+    <line id="LY_S_RST1" origin="LY" destination="S" train_type="RST"/>
+    <line id="LY_KA_RST1" origin="LY" destination="KA" train_type="RST"/>
+    <line id="KA_LY_RST1" origin="KA" destination="LY" train_type="RST"/>
+    <line id="ARE_NRE_GT2" origin="S" destination="KA" train_type="GT"/>
+    <line id="NRE_ARE_GT2" origin="KA" destination="S" train_type="GT"/>
+    <line id="LY_HB_GT2" origin="LY" destination="HB" train_type="GT"/>
+    <line id="HB_LY_GT2" origin="HB" destination="LY" train_type="GT"/>
+  </lines>
+  <line_demand>
+    <demand line="G_S_RST1" startHr="5" endHr="6" demand="7"/>
+    <demand line="G_S_RST1" startHr="9" endHr="10" demand="7"/>
+    <demand line="G_S_RST1" startHr="13" endHr="14" demand="7"/>
+    <demand line="G_S_RST1" startHr="15" endHr="16" demand="7"/>
+    <demand line="G_S_RST1" startHr="17" endHr="18" demand="7"/>
+    <demand line="G_S_RST1" startHr="21" endHr="22" demand="7"/>
+    <demand line="S_G_RST1" startHr="5" endHr="6" demand="7"/>
+    <demand line="S_G_RST1" startHr="9" endHr="10" demand="7"/>
+    <demand line="S_G_RST1" startHr="13" endHr="14" demand="7"/>
+    <demand line="S_G_RST1" startHr="15" endHr="16" demand="7"/>
+    <demand line="S_G_RST1" startHr="17" endHr="18" demand="7"/>
+    <demand line="S_G_RST1" startHr="21" endHr="22" demand="7"/>
+    <demand line="G_M_RST1" startHr="5" endHr="6" demand="7"/>
+    <demand line="G_M_RST1" startHr="9" endHr="10" demand="7"/>
+    <demand line="G_M_RST1" startHr="13" endHr="14" demand="7"/>
+    <demand line="G_M_RST1" startHr="15" endHr="16" demand="7"/>
+    <demand line="G_M_RST1" startHr="17" endHr="18" demand="7"/>
+    <demand line="G_M_RST1" startHr="21" endHr="22" demand="7"/>
+    <demand line="M_G_RST1" startHr="5" endHr="6" demand="7"/>
+    <demand line="M_G_RST1" startHr="9" endHr="10" demand="7"/>
+    <demand line="M_G_RST1" startHr="13" endHr="14" demand="7"/>
+    <demand line="M_G_RST1" startHr="15" endHr="16" demand="7"/>
+    <demand line="M_G_RST1" startHr="17" endHr="18" demand="7"/>
+    <demand line="M_G_RST1" startHr="21" endHr="22" demand="7"/>
+    <demand line="G_HB_RST2" startHr="1" endHr="2" demand="7"/>
+    <demand line="G_HB_RST2" startHr="3" endHr="4" demand="7"/>
+    <demand line="G_HB_RST2" startHr="5" endHr="6" demand="7"/>
+    <demand line="G_HB_RST2" startHr="7" endHr="8" demand="7"/>
+    <demand line="G_HB_RST2" startHr="9" endHr="10" demand="7"/>
+    <demand line="G_HB_RST2" startHr="11" endHr="12" demand="7"/>
+    <demand line="G_HB_RST2" startHr="13" endHr="14" demand="7"/>
+    <demand line="G_HB_RST2" startHr="15" endHr="16" demand="7"/>
+    <demand line="G_HB_RST2" startHr="17" endHr="18" demand="7"/>
+    <demand line="G_HB_RST2" startHr="19" endHr="20" demand="7"/>
+    <demand line="G_HB_RST2" startHr="21" endHr="22" demand="7"/>
+    <demand line="G_HB_RST2" startHr="23" endHr="24" demand="7"/>
+    <demand line="HB_G_RST2" startHr="1" endHr="2" demand="7"/>
+    <demand line="HB_G_RST2" startHr="3" endHr="4" demand="7"/>
+    <demand line="HB_G_RST2" startHr="5" endHr="6" demand="7"/>
+    <demand line="HB_G_RST2" startHr="7" endHr="8" demand="7"/>
+    <demand line="HB_G_RST2" startHr="9" endHr="10" demand="7"/>
+    <demand line="HB_G_RST2" startHr="11" endHr="12" demand="7"/>
+    <demand line="HB_G_RST2" startHr="13" endHr="14" demand="7"/>
+    <demand line="HB_G_RST2" startHr="15" endHr="16" demand="7"/>
+    <demand line="HB_G_RST2" startHr="17" endHr="18" demand="7"/>
+    <demand line="HB_G_RST2" startHr="19" endHr="20" demand="7"/>
+    <demand line="HB_G_RST2" startHr="21" endHr="22" demand="7"/>
+    <demand line="HB_G_RST2" startHr="23" endHr="24" demand="7"/>
+    <demand line="HM_LU_RST2" startHr="1" endHr="2" demand="7"/>
+    <demand line="HM_LU_RST2" startHr="3" endHr="4" demand="7"/>
+    <demand line="HM_LU_RST2" startHr="5" endHr="6" demand="7"/>
+    <demand line="HM_LU_RST2" startHr="7" endHr="8" demand="7"/>
+    <demand line="HM_LU_RST2" startHr="9" endHr="10" demand="7"/>
+    <demand line="HM_LU_RST2" startHr="11" endHr="12" demand="7"/>
+    <demand line="HM_LU_RST2" startHr="13" endHr="14" demand="7"/>
+    <demand line="HM_LU_RST2" startHr="15" endHr="16" demand="7"/>
+    <demand line="HM_LU_RST2" startHr="17" endHr="18" demand="7"/>
+    <demand line="HM_LU_RST2" startHr="19" endHr="20" demand="7"/>
+    <demand line="HM_LU_RST2" startHr="21" endHr="22" demand="7"/>
+    <demand line="HM_LU_RST2" startHr="23" endHr="24" demand="7"/>
+    <demand line="LU_HM_RST2" startHr="1" endHr="2" demand="7"/>
+    <demand line="LU_HM_RST2" startHr="3" endHr="4" demand="7"/>
+    <demand line="LU_HM_RST2" startHr="5" endHr="6" demand="7"/>
+    <demand line="LU_HM_RST2" startHr="7" endHr="8" demand="7"/>
+    <demand line="LU_HM_RST2" startHr="9" endHr="10" demand="7"/>
+    <demand line="LU_HM_RST2" startHr="11" endHr="12" demand="7"/>
+    <demand line="LU_HM_RST2" startHr="13" endHr="14" demand="7"/>
+    <demand line="LU_HM_RST2" startHr="15" endHr="16" demand="7"/>
+    <demand line="LU_HM_RST2" startHr="17" endHr="18" demand="7"/>
+    <demand line="LU_HM_RST2" startHr="19" endHr="20" demand="7"/>
+    <demand line="LU_HM_RST2" startHr="21" endHr="22" demand="7"/>
+    <demand line="LU_HM_RST2" startHr="23" endHr="24" demand="7"/>
+    <demand line="G_HB_GT1" startHr="2" endHr="3" demand="7"/>
+    <demand line="G_HB_GT1" startHr="8" endHr="9" demand="7"/>
+    <demand line="G_HB_GT1" startHr="14" endHr="15" demand="7"/>
+    <demand line="G_HB_GT1" startHr="20" endHr="21" demand="7"/>
+    <demand line="HB_G_GT1" startHr="2" endHr="3" demand="7"/>
+    <demand line="HB_G_GT1" startHr="8" endHr="9" demand="7"/>
+    <demand line="HB_G_GT1" startHr="14" endHr="15" demand="7"/>
+    <demand line="HB_G_GT1" startHr="20" endHr="21" demand="7"/>
+    <demand line="G_M_GT1" startHr="2" endHr="3" demand="7"/>
+    <demand line="G_M_GT1" startHr="8" endHr="9" demand="7"/>
+    <demand line="G_M_GT1" startHr="14" endHr="15" demand="7"/>
+    <demand line="G_M_GT1" startHr="20" endHr="21" demand="7"/>
+    <demand line="M_G_GT1" startHr="2" endHr="3" demand="7"/>
+    <demand line="M_G_GT1" startHr="8" endHr="9" demand="7"/>
+    <demand line="M_G_GT1" startHr="14" endHr="15" demand="7"/>
+    <demand line="M_G_GT1" startHr="20" endHr="21" demand="7"/>
+    <demand line="S_LY_RST1" startHr="5" endHr="6" demand="7"/>
+    <demand line="S_LY_RST1" startHr="9" endHr="10" demand="7"/>
+    <demand line="S_LY_RST1" startHr="13" endHr="14" demand="7"/>
+    <demand line="S_LY_RST1" startHr="15" endHr="16" demand="7"/>
+    <demand line="S_LY_RST1" startHr="17" endHr="18" demand="7"/>
+    <demand line="S_LY_RST1" startHr="21" endHr="22" demand="7"/>
+    <demand line="LY_S_RST1" startHr="5" endHr="6" demand="7"/>
+    <demand line="LY_S_RST1" startHr="9" endHr="10" demand="7"/>
+    <demand line="LY_S_RST1" startHr="13" endHr="14" demand="7"/>
+    <demand line="LY_S_RST1" startHr="15" endHr="16" demand="7"/>
+    <demand line="LY_S_RST1" startHr="17" endHr="18" demand="7"/>
+    <demand line="LY_S_RST1" startHr="21" endHr="22" demand="7"/>
+    <demand line="LY_KA_RST1" startHr="5" endHr="6" demand="7"/>
+    <demand line="LY_KA_RST1" startHr="9" endHr="10" demand="7"/>
+    <demand line="LY_KA_RST1" startHr="13" endHr="14" demand="7"/>
+    <demand line="LY_KA_RST1" startHr="15" endHr="16" demand="7"/>
+    <demand line="LY_KA_RST1" startHr="17" endHr="18" demand="7"/>
+    <demand line="LY_KA_RST1" startHr="21" endHr="22" demand="7"/>
+    <demand line="KA_LY_RST1" startHr="5" endHr="6" demand="7"/>
+    <demand line="KA_LY_RST1" startHr="9" endHr="10" demand="7"/>
+    <demand line="KA_LY_RST1" startHr="13" endHr="14" demand="7"/>
+    <demand line="KA_LY_RST1" startHr="15" endHr="16" demand="7"/>
+    <demand line="KA_LY_RST1" startHr="17" endHr="18" demand="7"/>
+    <demand line="KA_LY_RST1" startHr="21" endHr="22" demand="7"/>
+    <demand line="ARE_NRE_GT2" startHr="0" endHr="1" demand="7"/>
+    <demand line="ARE_NRE_GT2" startHr="12" endHr="13" demand="7"/>
+    <demand line="NRE_ARE_GT2" startHr="0" endHr="1" demand="7"/>
+    <demand line="NRE_ARE_GT2" startHr="12" endHr="13" demand="7"/>
+    <demand line="LY_HB_GT2" startHr="0" endHr="1" demand="7"/>
+    <demand line="LY_HB_GT2" startHr="12" endHr="13" demand="7"/>
+    <demand line="HB_LY_GT2" startHr="0" endHr="1" demand="7"/>
+    <demand line="HB_LY_GT2" startHr="12" endHr="13" demand="7"/>
+  </line_demand>
+  <line_routes>
+    <line_route line="G_S_RST1" route="G-A-SK-HB-NR-LI-S">
+      <dur link="G_A">0.5833333333333334</dur>
+      <dur link="A_SK">0.5833333333333334</dur>
+      <dur link="SK_HB">0.5833333333333334</dur>
+      <dur link="HB_NR">0.5833333333333334</dur>
+      <dur link="NR_LI">0.5833333333333334</dur>
+      <dur link="LI_S">0.5833333333333334</dur>
+    </line_route>
+    <line_route line="S_G_RST1" route="S-LI-NR-HB-SK-A-G">
+      <dur link="S_LI">0.5833333333333334</dur>
+      <dur link="LI_NR">0.5833333333333334</dur>
+      <dur link="NR_HB">0.5833333333333334</dur>
+      <dur link="HB_SK">0.5833333333333334</dur>
+      <dur link="SK_A">0.5833333333333334</dur>
+      <dur link="A_G">0.5833333333333334</dur>
+    </line_route>
+    <line_route line="G_M_RST1" route="G-KB-VB-HPBG-D-HM-HÖ-E-LU-M">
+      <dur link="G_KB">0.4666666666666667</dur>
+      <dur link="KB_VB">0.4666666666666667</dur>
+      <dur link="VB_HPBG">0.4666666666666667</dur>
+      <dur link="HPBG_D">0.4666666666666667</dur>
+      <dur link="D_HM">0.4666666666666667</dur>
+      <dur link="HM_HÖ">0.4666666666666667</dur>
+      <dur link="HÖ_E">0.4666666666666667</dur>
+      <dur link="E_LU">0.4666666666666667</dur>
+      <dur link="LU_M">0.4666666666666667</dur>
+    </line_route>
+    <line_route line="M_G_RST1" route="M-LU-E-HÖ-HM-D-HPBG-VB-KB-G">
+      <dur link="M_LU">0.4666666666666667</dur>
+      <dur link="LU_E">0.4666666666666667</dur>
+      <dur link="E_HÖ">0.4666666666666667</dur>
+      <dur link="HÖ_HM">0.4666666666666667</dur>
+      <dur link="HM_D">0.4666666666666667</dur>
+      <dur link="D_HPBG">0.4666666666666667</dur>
+      <dur link="HPBG_VB">0.4666666666666667</dur>
+      <dur link="VB_KB">0.4666666666666667</dur>
+      <dur link="KB_G">0.4666666666666667</dur>
+    </line_route>
+    <line_route line="G_HB_RST2" route="G-A-SK-HB">
+      <dur link="G_A">0.6666666666666666</dur>
+      <dur link="A_SK">0.6666666666666666</dur>
+      <dur link="SK_HB">0.6666666666666666</dur>
+    </line_route>
+    <line_route line="HB_G_RST2" route="HB-SK-A-G">
+      <dur link="HB_SK">0.6666666666666666</dur>
+      <dur link="SK_A">0.6666666666666666</dur>
+      <dur link="A_G">0.6666666666666666</dur>
+    </line_route>
+    <line_route line="HM_LU_RST2" route="HM-HÖ-E-LU">
+      <dur link="HM_HÖ">0.3333333333333333</dur>
+      <dur link="HÖ_E">0.3333333333333333</dur>
+      <dur link="E_LU">0.3333333333333333</dur>
+    </line_route>
+    <line_route line="LU_HM_RST2" route="LU-E-HÖ-HM">
+      <dur link="LU_E">0.3333333333333333</dur>
+      <dur link="E_HÖ">0.3333333333333333</dur>
+      <dur link="HÖ_HM">0.3333333333333333</dur>
+    </line_route>
+    <line_route line="G_HB_GT1" route="G-A-SK-HB">
+      <dur link="G_A">1.0</dur>
+      <dur link="A_SK">1.0</dur>
+      <dur link="SK_HB">1.0</dur>
+    </line_route>
+    <line_route line="HB_G_GT1" route="HB-SK-A-G">
+      <dur link="HB_SK">1.0</dur>
+      <dur link="SK_A">1.0</dur>
+      <dur link="A_G">1.0</dur>
+    </line_route>
+    <line_route line="G_M_GT1" route="G-KB-VB-HPBG-D-HM-HÖ-E-LU-M">
+      <dur link="G_KB">0.6666666666666666</dur>
+      <dur link="KB_VB">0.6666666666666666</dur>
+      <dur link="VB_HPBG">0.6666666666666666</dur>
+      <dur link="HPBG_D">0.6666666666666666</dur>
+      <dur link="D_HM">0.6666666666666666</dur>
+      <dur link="HM_HÖ">0.6666666666666666</dur>
+      <dur link="HÖ_E">0.6666666666666666</dur>
+      <dur link="E_LU">0.6666666666666666</dur>
+      <dur link="LU_M">0.6666666666666666</dur>
+    </line_route>
+    <line_route line="M_G_GT1" route="M-LU-E-HÖ-HM-D-HPBG-VB-KB-G">
+      <dur link="M_LU">0.6666666666666666</dur>
+      <dur link="LU_E">0.6666666666666666</dur>
+      <dur link="E_HÖ">0.6666666666666666</dur>
+      <dur link="HÖ_HM">0.6666666666666666</dur>
+      <dur link="HM_D">0.6666666666666666</dur>
+      <dur link="D_HPBG">0.6666666666666666</dur>
+      <dur link="HPBG_VB">0.6666666666666666</dur>
+      <dur link="VB_KB">0.6666666666666666</dur>
+      <dur link="KB_G">0.6666666666666666</dur>
+    </line_route>
+    <line_route line="S_LY_RST1" route="S-LI-NR-HB-NK-AV-HM-SU-UÅ-BD-LY">
+      <dur link="S_LI">1.2</dur>
+      <dur link="LI_NR">1.2</dur>
+      <dur link="NR_HB">1.2</dur>
+      <dur link="HB_NK">1.2</dur>
+      <dur link="NK_AV">1.2</dur>
+      <dur link="AV_HM">1.2</dur>
+      <dur link="HM_SU">1.2</dur>
+      <dur link="SU_UÅ">1.2</dur>
+      <dur link="UÅ_BD">1.2</dur>
+      <dur link="BD_LY">1.2</dur>
+    </line_route>
+    <line_route line="LY_S_RST1" route="LY-BD-UÅ-SU-HM-AV-NK-HB-NR-LI-S">
+      <dur link="LY_BD">1.2</dur>
+      <dur link="BD_UÅ">1.2</dur>
+      <dur link="UÅ_SU">1.2</dur>
+      <dur link="SU_HM">1.2</dur>
+      <dur link="HM_AV">1.2</dur>
+      <dur link="AV_NK">1.2</dur>
+      <dur link="NK_HB">1.2</dur>
+      <dur link="HB_NR">1.2</dur>
+      <dur link="NR_LI">1.2</dur>
+      <dur link="LI_S">1.2</dur>
+    </line_route>
+    <line_route line="LY_KA_RST1" route="LY-BD-GV-KA">
+      <dur link="LY_BD">1.3333333333333333</dur>
+      <dur link="BD_GV">1.3333333333333333</dur>
+      <dur link="GV_KA">1.3333333333333333</dur>
+    </line_route>
+    <line_route line="KA_LY_RST1" route="KA-GV-BD-LY">
+      <dur link="KA_GV">1.3333333333333333</dur>
+      <dur link="GV_BD">1.3333333333333333</dur>
+      <dur link="BD_LY">1.3333333333333333</dur>
+    </line_route>
+    <line_route line="ARE_NRE_GT2" route="S-LI-NR-HB-NK-AV-HM-SU-BÄ-LSL-VN-UÅ-BD-GV-KA">
+      <dur link="S_LI">1.4285714285714286</dur>
+      <dur link="LI_NR">1.4285714285714286</dur>
+      <dur link="NR_HB">1.4285714285714286</dur>
+      <dur link="HB_NK">1.4285714285714286</dur>
+      <dur link="NK_AV">1.4285714285714286</dur>
+      <dur link="AV_HM">1.4285714285714286</dur>
+      <dur link="HM_SU">1.4285714285714286</dur>
+      <dur link="SU_BÄ">1.4285714285714286</dur>
+      <dur link="BÄ_LSL">1.4285714285714286</dur>
+      <dur link="LSL_VN">1.4285714285714286</dur>
+      <dur link="VN_UÅ">1.4285714285714286</dur>
+      <dur link="UÅ_BD">1.4285714285714286</dur>
+      <dur link="BD_GV">1.4285714285714286</dur>
+      <dur link="GV_KA">1.4285714285714286</dur>
+    </line_route>
+    <line_route line="NRE_ARE_GT2" route="KA-GV-BD-UÅ-VN-LSL-BÄ-SU-HM-AV-NK-HB-NR-LI-S">
+      <dur link="KA_GV">1.4285714285714286</dur>
+      <dur link="GV_BD">1.4285714285714286</dur>
+      <dur link="BD_UÅ">1.4285714285714286</dur>
+      <dur link="UÅ_VN">1.4285714285714286</dur>
+      <dur link="VN_LSL">1.4285714285714286</dur>
+      <dur link="LSL_BÄ">1.4285714285714286</dur>
+      <dur link="BÄ_SU">1.4285714285714286</dur>
+      <dur link="SU_HM">1.4285714285714286</dur>
+      <dur link="HM_AV">1.4285714285714286</dur>
+      <dur link="AV_NK">1.4285714285714286</dur>
+      <dur link="NK_HB">1.4285714285714286</dur>
+      <dur link="HB_NR">1.4285714285714286</dur>
+      <dur link="NR_LI">1.4285714285714286</dur>
+      <dur link="LI_S">1.4285714285714286</dur>
+    </line_route>
+    <line_route line="LY_HB_GT2" route="LY-BD-UÅ-VN-LSL-BÄ-SU-HM-AV-NK-HB">
+      <dur link="LY_BD">1.6</dur>
+      <dur link="BD_UÅ">1.6</dur>
+      <dur link="UÅ_VN">1.6</dur>
+      <dur link="VN_LSL">1.6</dur>
+      <dur link="LSL_BÄ">1.6</dur>
+      <dur link="BÄ_SU">1.6</dur>
+      <dur link="SU_HM">1.6</dur>
+      <dur link="HM_AV">1.6</dur>
+      <dur link="AV_NK">1.6</dur>
+      <dur link="NK_HB">1.6</dur>
+    </line_route>
+    <line_route line="HB_LY_GT2" route="HB-NK-AV-HM-SU-BÄ-LSL-VN-UÅ-BD-LY">
+      <dur link="HB_NK">1.6</dur>
+      <dur link="NK_AV">1.6</dur>
+      <dur link="AV_HM">1.6</dur>
+      <dur link="HM_SU">1.6</dur>
+      <dur link="SU_BÄ">1.6</dur>
+      <dur link="BÄ_LSL">1.6</dur>
+      <dur link="LSL_VN">1.6</dur>
+      <dur link="VN_UÅ">1.6</dur>
+      <dur link="UÅ_BD">1.6</dur>
+      <dur link="BD_LY">1.6</dur>
+    </line_route>
+  </line_routes>
+  <trains>
+    <train id="G_S_RST1_0_0" line="G_S_RST1" departure="2022-01-03 05:00:00" arrival="2022-01-03 08:30:00"/>
+    <train id="G_S_RST1_0_1" line="G_S_RST1" departure="2022-01-03 09:00:00" arrival="2022-01-03 12:30:00"/>
+    <train id="G_S_RST1_0_2" line="G_S_RST1" departure="2022-01-03 13:00:00" arrival="2022-01-03 16:30:00"/>
+    <train id="G_S_RST1_0_3" line="G_S_RST1" departure="2022-01-03 15:00:00" arrival="2022-01-03 18:30:00"/>
+    <train id="G_S_RST1_0_4" line="G_S_RST1" departure="2022-01-03 17:00:00" arrival="2022-01-03 20:30:00"/>
+    <train id="G_S_RST1_0_5" line="G_S_RST1" departure="2022-01-03 21:00:00" arrival="2022-01-04 00:30:00"/>
+    <train id="G_S_RST1_1_0" line="G_S_RST1" departure="2022-01-04 05:00:00" arrival="2022-01-04 08:30:00"/>
+    <train id="G_S_RST1_1_1" line="G_S_RST1" departure="2022-01-04 09:00:00" arrival="2022-01-04 12:30:00"/>
+    <train id="G_S_RST1_1_2" line="G_S_RST1" departure="2022-01-04 13:00:00" arrival="2022-01-04 16:30:00"/>
+    <train id="G_S_RST1_1_3" line="G_S_RST1" departure="2022-01-04 15:00:00" arrival="2022-01-04 18:30:00"/>
+  </trains>
+  <traffic_year>
+    <period type="normal" startDate="2024-01-01" endDate="2024-12-31">
+      <day weekday="0" dataDate="2022-01-03"/>
+      <day weekday="1" dataDate="2022-01-04"/>
+      <day weekday="2" dataDate="2022-01-05"/>
+      <day weekday="3" dataDate="2022-01-06"/>
+      <day weekday="4" dataDate="2022-01-07"/>
+      <day weekday="5" dataDate="2022-01-08"/>
+      <day weekday="6" dataDate="2022-01-09"/>
+    </period>
+    <period type="easter" startDate="2024-03-29" endDate="2024-04-01">
+      <day weekday="4" dataDate="2022-04-14"/>
+      <day weekday="5" dataDate="2022-04-15"/>
+      <day weekday="6" dataDate="2022-04-16"/>
+      <day weekday="0" dataDate="2022-04-17"/>
+    </period>
+    <period type="summer" startDate="2024-07-15" endDate="2024-08-04">
+      <day weekday="0" dataDate="2022-07-18"/>
+      <day weekday="1" dataDate="2022-07-19"/>
+      <day weekday="2" dataDate="2022-07-20"/>
+      <day weekday="3" dataDate="2022-07-21"/>
+      <day weekday="4" dataDate="2022-07-22"/>
+      <day weekday="5" dataDate="2022-07-23"/>
+      <day weekday="6" dataDate="2022-07-24"/>
+    </period>
+  </traffic_year>
+</traffic>

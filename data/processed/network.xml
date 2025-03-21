@@ -1,0 +1,119 @@
+<?xml version="1.0" ?>
+<network>
+  <nodes>
+    <node id="G" name="Goteborg Central" lat="57.7089" lon="11.9746" merge_group="G"/>
+    <node id="S" name="Stockholm Central" lat="59.3293" lon="18.0686" merge_group="S"/>
+    <node id="M" name="Malmo Central" lat="55.605" lon="13.0038" merge_group="M"/>
+    <node id="SK" name="Skovde" lat="58.389" lon="13.8456"/>
+    <node id="HB" name="Hallsberg" lat="59.0664" lon="15.1098" merge_group="HB"/>
+    <node id="A" name="Alingsas" lat="57.9295" lon="12.5337"/>
+    <node id="K" name="Katrineholm" lat="59.0" lon="16.2"/>
+    <node id="F" name="Falkoping" lat="58.1752" lon="13.553"/>
+    <node id="LP" name="Linkoping" lat="58.4108" lon="15.6213"/>
+    <node id="N" name="Norrkoping" lat="58.5977" lon="16.1826"/>
+    <node id="MY" name="Mjolby" lat="58.33" lon="15.12"/>
+    <node id="NS" name="Nassjo" lat="57.6526" lon="14.6946"/>
+    <node id="AV" name="Alvesta" lat="56.899" lon="14.556"/>
+    <node id="HM" name="Halmstad" lat="56.6746" lon="12.8645"/>
+    <node id="LU" name="Lund" lat="55.7047" lon="13.191" merge_group="LU"/>
+    <node id="E" name="Eslov" lat="55.8391" lon="13.3035"/>
+    <node id="HOR" name="Hoor" lat="55.9374" lon="13.5426"/>
+    <node id="KB" name="Kungsbacka" lat="57.4874" lon="12.0798"/>
+    <node id="VB" name="Varberg" lat="57.1055" lon="12.2502"/>
+    <node id="HBG" name="Helsingborg" lat="56.0465" lon="12.6945"/>
+    <node id="AGE" name="Angelholm" lat="56.2428" lon="12.8605"/>
+    <node id="HDV" name="Hudiksvall" lat="61.7279" lon="17.1044"/>
+    <node id="SUC" name="Sundsvall Central" lat="62.3908" lon="17.3069"/>
+    <node id="BRC" name="Bracke" lat="62.7508" lon="15.4195"/>
+    <node id="LAS" name="Langsele" lat="63.1745" lon="17.1063"/>
+    <node id="UME" name="Umea Central" lat="63.8284" lon="20.2597"/>
+    <node id="VNS" name="Vannas" lat="63.9062" lon="19.7503"/>
+    <node id="BDN" name="Boden Central" lat="65.8256" lon="21.6906"/>
+    <node id="LE" name="Lulea" lat="65.5842" lon="22.1547"/>
+    <node id="GVE" name="Gallivare" lat="67.1367" lon="20.6599"/>
+    <node id="KRA" name="Kiruna" lat="67.8558" lon="20.2253"/>
+    <node id="KL" name="Karlstad Central" lat="59.3793" lon="13.5036"/>
+    <node id="KIL" name="Kil" lat="59.5038" lon="13.3196"/>
+    <node id="TOR" name="Toreboda" lat="58.7062" lon="14.1229"/>
+    <node id="VGE" name="Veinge" lat="56.4833" lon="13.0333"/>
+    <node id="BS" name="Boras" lat="57.721" lon="12.9401"/>
+    <node id="ALV" name="Alvangen" lat="58.0116" lon="12.1147"/>
+    <node id="DFO" name="Degerfors" lat="59.2335" lon="14.428"/>
+  </nodes>
+  <links>
+    <link id="G_A" from="G" to="A" length="46" tracks="2" capacity="10"/>
+    <link id="A_SK" from="A" to="SK" length="81" tracks="2" capacity="10"/>
+    <link id="SK_HB" from="SK" to="HB" length="73" tracks="2" capacity="10"/>
+    <link id="HB_K" from="HB" to="K" length="90" tracks="2" capacity="10"/>
+    <link id="K_S" from="K" to="S" length="140" tracks="2" capacity="10"/>
+    <link id="HB_NS" from="HB" to="NS" length="172" tracks="1" capacity="5"/>
+    <link id="NS_AV" from="NS" to="AV" length="77" tracks="2" capacity="10"/>
+    <link id="AV_HM" from="AV" to="HM" length="82" tracks="2" capacity="10"/>
+    <link id="HM_HOR" from="HM" to="HOR" length="32" tracks="2" capacity="10"/>
+    <link id="HOR_E" from="HOR" to="E" length="30" tracks="2" capacity="10"/>
+    <link id="E_LU" from="E" to="LU" length="24" tracks="2" capacity="10"/>
+    <link id="LU_M" from="LU" to="M" length="20" tracks="2" capacity="10"/>
+    <link id="G_ALV" from="G" to="ALV" length="30" tracks="2" capacity="10"/>
+    <link id="G_KB" from="G" to="KB" length="28" tracks="2" capacity="10"/>
+    <link id="KB_VB" from="KB" to="VB" length="47" tracks="1" capacity="5"/>
+    <link id="VB_VGE" from="VB" to="VGE" length="70" tracks="2" capacity="10"/>
+    <link id="VGE_HBG" from="VGE" to="HBG" length="40" tracks="2" capacity="10"/>
+    <link id="HBG_AGE" from="HBG" to="AGE" length="35" tracks="2" capacity="10"/>
+    <link id="AGE_HM" from="AGE" to="HM" length="60" tracks="2" capacity="10"/>
+    <link id="K_N" from="K" to="N" length="65" tracks="2" capacity="10"/>
+    <link id="N_LP" from="N" to="LP" length="42" tracks="2" capacity="10"/>
+    <link id="LP_MY" from="LP" to="MY" length="35" tracks="2" capacity="10"/>
+    <link id="MY_NS" from="MY" to="NS" length="65" tracks="2" capacity="10"/>
+    <link id="HDV_SUC" from="HDV" to="SUC" length="86" tracks="1" capacity="5"/>
+    <link id="SUC_BRC" from="SUC" to="BRC" length="100" tracks="1" capacity="5"/>
+    <link id="BRC_LAS" from="BRC" to="LAS" length="120" tracks="1" capacity="5"/>
+    <link id="LAS_VNS" from="LAS" to="VNS" length="153" tracks="1" capacity="5"/>
+    <link id="VNS_UME" from="VNS" to="UME" length="32" tracks="1" capacity="5"/>
+    <link id="UME_BDN" from="UME" to="BDN" length="210" tracks="1" capacity="5"/>
+    <link id="BDN_LE" from="BDN" to="LE" length="38" tracks="1" capacity="5"/>
+    <link id="BDN_GVE" from="BDN" to="GVE" length="180" tracks="1" capacity="5"/>
+    <link id="GVE_KRA" from="GVE" to="KRA" length="120" tracks="1" capacity="5"/>
+    <link id="VGE_TOR" from="VGE" to="TOR" length="60" tracks="1" capacity="5"/>
+    <link id="G_BS" from="G" to="BS" length="64" tracks="1" capacity="5"/>
+    <link id="BS_NS" from="BS" to="NS" length="132" tracks="1" capacity="5"/>
+    <link id="DFO_SK" from="DFO" to="SK" length="85" tracks="1" capacity="5"/>
+    <link id="HB_DFO" from="HB" to="DFO" length="45" tracks="1" capacity="5"/>
+    <link id="A_G" from="A" to="G" length="46" tracks="2" capacity="10"/>
+    <link id="SK_A" from="SK" to="A" length="81" tracks="2" capacity="10"/>
+    <link id="HB_SK" from="HB" to="SK" length="73" tracks="2" capacity="10"/>
+    <link id="K_HB" from="K" to="HB" length="90" tracks="2" capacity="10"/>
+    <link id="S_K" from="S" to="K" length="140" tracks="2" capacity="10"/>
+    <link id="NS_HB" from="NS" to="HB" length="172" tracks="1" capacity="5"/>
+    <link id="AV_NS" from="AV" to="NS" length="77" tracks="2" capacity="10"/>
+    <link id="HM_AV" from="HM" to="AV" length="82" tracks="2" capacity="10"/>
+    <link id="HOR_HM" from="HOR" to="HM" length="32" tracks="2" capacity="10"/>
+    <link id="E_HOR" from="E" to="HOR" length="30" tracks="2" capacity="10"/>
+    <link id="LU_E" from="LU" to="E" length="24" tracks="2" capacity="10"/>
+    <link id="M_LU" from="M" to="LU" length="20" tracks="2" capacity="10"/>
+    <link id="ALV_G" from="ALV" to="G" length="30" tracks="2" capacity="10"/>
+    <link id="KB_G" from="KB" to="G" length="28" tracks="2" capacity="10"/>
+    <link id="VB_KB" from="VB" to="KB" length="47" tracks="1" capacity="5"/>
+    <link id="VGE_VB" from="VGE" to="VB" length="70" tracks="2" capacity="10"/>
+    <link id="HBG_VGE" from="HBG" to="VGE" length="40" tracks="2" capacity="10"/>
+    <link id="AGE_HBG" from="AGE" to="HBG" length="35" tracks="2" capacity="10"/>
+    <link id="HM_AGE" from="HM" to="AGE" length="60" tracks="2" capacity="10"/>
+    <link id="N_K" from="N" to="K" length="65" tracks="2" capacity="10"/>
+    <link id="LP_N" from="LP" to="N" length="42" tracks="2" capacity="10"/>
+    <link id="MY_LP" from="MY" to="LP" length="35" tracks="2" capacity="10"/>
+    <link id="NS_MY" from="NS" to="MY" length="65" tracks="2" capacity="10"/>
+    <link id="SUC_HDV" from="SUC" to="HDV" length="86" tracks="1" capacity="5"/>
+    <link id="BRC_SUC" from="BRC" to="SUC" length="100" tracks="1" capacity="5"/>
+    <link id="LAS_BRC" from="LAS" to="BRC" length="120" tracks="1" capacity="5"/>
+    <link id="VNS_LAS" from="VNS" to="LAS" length="153" tracks="1" capacity="5"/>
+    <link id="UME_VNS" from="UME" to="VNS" length="32" tracks="1" capacity="5"/>
+    <link id="BDN_UME" from="BDN" to="UME" length="210" tracks="1" capacity="5"/>
+    <link id="LE_BDN" from="LE" to="BDN" length="38" tracks="1" capacity="5"/>
+    <link id="GVE_BDN" from="GVE" to="BDN" length="180" tracks="1" capacity="5"/>
+    <link id="KRA_GVE" from="KRA" to="GVE" length="120" tracks="1" capacity="5"/>
+    <link id="TOR_VGE" from="TOR" to="VGE" length="60" tracks="1" capacity="5"/>
+    <link id="BS_G" from="BS" to="G" length="64" tracks="1" capacity="5"/>
+    <link id="NS_BS" from="NS" to="BS" length="132" tracks="1" capacity="5"/>
+    <link id="SK_DFO" from="SK" to="DFO" length="85" tracks="1" capacity="5"/>
+    <link id="DFO_HB" from="DFO" to="HB" length="45" tracks="1" capacity="5"/>
+  </links>
+</network>
